@@ -11,6 +11,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@iechor/research-cli": "^0.2.8",
     "@mdx-js/loader": "^1.6.4",
     "@mdx-js/react": "^1.6.4",
     "@next/mdx": "^9.5.5",

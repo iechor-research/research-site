@@ -1,5 +1,4 @@
 import { spawn } from 'child_process'
-import path from 'path'
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -13,15 +12,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    // 找到 Research CLI 的路径
-    const cliPath = path.join(
-      process.cwd(),
-      '..',
-      'packages',
-      'cli',
-      'bin',
-      'research.js'
-    )
+    // 使用已安装的 @iechor/research-cli 包
 
     // 解析命令参数
     const args = command.split(' ').filter((arg) => arg.trim())
@@ -45,7 +36,7 @@ Examples:
   /paper outline "AI Safety"
   /bib manage --format bibtex
 
-Note: This is a web interface to Research CLI. Some commands may have limited functionality.`,
+Note: This is a web interface to Research CLI using @iechor/research-cli package.`,
       })
     }
 
@@ -54,10 +45,25 @@ Note: This is a web interface to Research CLI. Some commands may have limited fu
       args[0] = args[0].substring(1)
     }
 
-    // 执行 Research CLI 命令
-    const child = spawn('node', [cliPath, ...args], {
+    // 特殊处理一些常见命令
+    if (args[0] === 'version') {
+      args[0] = '--version'
+    } else if (
+      args[0] === 'research' ||
+      args[0] === 'paper' ||
+      args[0] === 'bib' ||
+      args[0] === 'submit'
+    ) {
+      // 对于研究相关命令，使用 --prompt 参数
+      const prompt = args.join(' ')
+      args = ['--prompt', prompt]
+    }
+
+    // 使用 npx 执行已安装的 Research CLI 包，在根目录中执行以避免依赖冲突
+    const child = spawn('npx', ['@iechor/research-cli', ...args], {
       stdio: ['pipe', 'pipe', 'pipe'],
       env: { ...process.env, NODE_ENV: 'production' },
+      cwd: process.cwd() + '/..', // 在根目录中执行
     })
 
     let output = ''
@@ -95,9 +101,9 @@ Note: This is a web interface to Research CLI. Some commands may have limited fu
     const timeout = setTimeout(() => {
       child.kill()
       res.json({
-        error: 'Command timed out after 30 seconds',
+        error: 'Command timed out after 60 seconds',
       })
-    }, 30000)
+    }, 60000)
 
     child.on('close', () => {
       clearTimeout(timeout)

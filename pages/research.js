@@ -713,6 +713,234 @@ export default function ResearchPage() {
           </div>
         </div>
 
+        {/* Interface Themes */}
+        <div
+          style={{
+            background: 'linear-gradient(135deg, #2c3e50 0%, #34495e 100%)',
+            borderRadius: '25px',
+            padding: '60px',
+            textAlign: 'center',
+            color: 'white',
+            marginBottom: '40px',
+          }}
+        >
+          <h2
+            style={{
+              fontSize: '3rem',
+              fontWeight: 'bold',
+              marginBottom: '2rem',
+              textShadow: '2px 2px 4px rgba(0,0,0,0.3)',
+            }}
+          >
+            Beautiful Interface Themes
+          </h2>
+          <p
+            style={{
+              fontSize: '1.3rem',
+              marginBottom: '3rem',
+              opacity: '0.9',
+              maxWidth: '800px',
+              margin: '0 auto 3rem auto',
+              lineHeight: '1.6',
+            }}
+          >
+            Choose from multiple carefully crafted themes to match your research
+            environment and personal preferences.
+          </p>
+
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: '25px',
+              maxWidth: '1200px',
+              margin: '0 auto',
+            }}
+          >
+            <div
+              style={{
+                backgroundColor: 'rgba(255,255,255,0.1)',
+                borderRadius: '15px',
+                padding: '20px',
+                border: '1px solid rgba(255,255,255,0.2)',
+              }}
+            >
+              <img
+                src="/theme-default.png"
+                alt="Default Theme"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  borderRadius: '8px',
+                  marginBottom: '15px',
+                  border: '1px solid rgba(255,255,255,0.2)',
+                }}
+              />
+              <h3 style={{ fontSize: '1.3rem', marginBottom: '8px' }}>
+                Default Theme
+              </h3>
+              <p style={{ fontSize: '1rem', opacity: '0.8' }}>
+                Classic dark theme with blue accents
+              </p>
+            </div>
+
+            <div
+              style={{
+                backgroundColor: 'rgba(255,255,255,0.1)',
+                borderRadius: '15px',
+                padding: '20px',
+                border: '1px solid rgba(255,255,255,0.2)',
+              }}
+            >
+              <img
+                src="/theme-github.png"
+                alt="GitHub Theme"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  borderRadius: '8px',
+                  marginBottom: '15px',
+                  border: '1px solid rgba(255,255,255,0.2)',
+                }}
+              />
+              <h3 style={{ fontSize: '1.3rem', marginBottom: '8px' }}>
+                GitHub Theme
+              </h3>
+              <p style={{ fontSize: '1rem', opacity: '0.8' }}>
+                GitHub-inspired dark theme
+              </p>
+            </div>
+
+            <div
+              style={{
+                backgroundColor: 'rgba(255,255,255,0.1)',
+                borderRadius: '15px',
+                padding: '20px',
+                border: '1px solid rgba(255,255,255,0.2)',
+              }}
+            >
+              <img
+                src="/theme-dracula.png"
+                alt="Dracula Theme"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  borderRadius: '8px',
+                  marginBottom: '15px',
+                  border: '1px solid rgba(255,255,255,0.2)',
+                }}
+              />
+              <h3 style={{ fontSize: '1.3rem', marginBottom: '8px' }}>
+                Dracula Theme
+              </h3>
+              <p style={{ fontSize: '1rem', opacity: '0.8' }}>
+                Popular purple-tinted theme
+              </p>
+            </div>
+
+            <div
+              style={{
+                backgroundColor: 'rgba(255,255,255,0.1)',
+                borderRadius: '15px',
+                padding: '20px',
+                border: '1px solid rgba(255,255,255,0.2)',
+              }}
+            >
+              <img
+                src="/theme-ayu.png"
+                alt="Ayu Theme"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  borderRadius: '8px',
+                  marginBottom: '15px',
+                  border: '1px solid rgba(255,255,255,0.2)',
+                }}
+              />
+              <h3 style={{ fontSize: '1.3rem', marginBottom: '8px' }}>
+                Ayu Theme
+              </h3>
+              <p style={{ fontSize: '1rem', opacity: '0.8' }}>
+                Modern minimalist theme
+              </p>
+            </div>
+
+            <div
+              style={{
+                backgroundColor: 'rgba(255,255,255,0.1)',
+                borderRadius: '15px',
+                padding: '20px',
+                border: '1px solid rgba(255,255,255,0.2)',
+              }}
+            >
+              <img
+                src="/theme-default-light.png"
+                alt="Light Theme"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  borderRadius: '8px',
+                  marginBottom: '15px',
+                  border: '1px solid rgba(255,255,255,0.2)',
+                }}
+              />
+              <h3 style={{ fontSize: '1.3rem', marginBottom: '8px' }}>
+                Light Theme
+              </h3>
+              <p style={{ fontSize: '1rem', opacity: '0.8' }}>
+                Clean light theme for daytime use
+              </p>
+            </div>
+
+            <div
+              style={{
+                backgroundColor: 'rgba(255,255,255,0.1)',
+                borderRadius: '15px',
+                padding: '20px',
+                border: '1px solid rgba(255,255,255,0.2)',
+              }}
+            >
+              <img
+                src="/theme-iechor-light.png"
+                alt="Iechor Light Theme"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  borderRadius: '8px',
+                  marginBottom: '15px',
+                  border: '1px solid rgba(255,255,255,0.2)',
+                }}
+              />
+              <h3 style={{ fontSize: '1.3rem', marginBottom: '8px' }}>
+                Iechor Light
+              </h3>
+              <p style={{ fontSize: '1rem', opacity: '0.8' }}>
+                Branded light theme
+              </p>
+            </div>
+          </div>
+
+          <div style={{ marginTop: '3rem' }}>
+            <pre
+              style={{
+                backgroundColor: 'rgba(0,0,0,0.4)',
+                color: 'white',
+                padding: '20px',
+                borderRadius: '10px',
+                fontSize: '1.2rem',
+                fontWeight: 'bold',
+                display: 'inline-block',
+                textAlign: 'left',
+              }}
+            >
+              <code>research config set theme dracula</code>
+            </pre>
+            <p style={{ marginTop: '1rem', fontSize: '1rem', opacity: '0.9' }}>
+              Switch themes instantly with a simple command
+            </p>
+          </div>
+        </div>
+
         <div
           style={{
             background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',

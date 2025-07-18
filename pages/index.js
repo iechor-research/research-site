@@ -493,6 +493,100 @@ export default function HomePage({ latestRelease }) {
         </div>
 
         {/**
+         * Features in Action
+         */}
+        <h2 className="fade-in" id="features-in-action">
+          <a href="#features-in-action">Features in Action</a>
+        </h2>
+        <p className="fade-in" style={{ color: '#ccc', lineHeight: '1.6' }}>
+          See Research CLI in action with these real-world examples and
+          interface screenshots.
+        </p>
+
+        <div style={{ margin: '40px 0' }}>
+          <h3
+            className="fade-in"
+            style={{ color: '#00d4ff', marginBottom: '20px' }}
+          >
+            Interactive Research Interface
+          </h3>
+          <div
+            className="fade-in"
+            style={{ textAlign: 'center', marginBottom: '30px' }}
+          >
+            <img
+              src="/research-screenshot.png"
+              alt="Research CLI Interface Screenshot"
+              style={{
+                maxWidth: '100%',
+                height: 'auto',
+                borderRadius: '8px',
+                border: '1px solid #333',
+                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.5)',
+              }}
+            />
+            <p style={{ color: '#888', fontSize: '14px', marginTop: '10px' }}>
+              Research CLI's main interface showing literature search and
+              analysis tools
+            </p>
+          </div>
+
+          <h3
+            className="fade-in"
+            style={{ color: '#00d4ff', marginBottom: '20px' }}
+          >
+            Advanced Research Workflow
+          </h3>
+          <div
+            className="fade-in"
+            style={{ textAlign: 'center', marginBottom: '30px' }}
+          >
+            <img
+              src="/research-screenshot2.png"
+              alt="Research CLI Advanced Features Screenshot"
+              style={{
+                maxWidth: '100%',
+                height: 'auto',
+                borderRadius: '8px',
+                border: '1px solid #333',
+                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.5)',
+              }}
+            />
+            <p style={{ color: '#888', fontSize: '14px', marginTop: '10px' }}>
+              Advanced workflow with AI writing assistant, bibliography
+              management, and journal submission tools
+            </p>
+          </div>
+
+          <h3
+            className="fade-in"
+            style={{ color: '#00d4ff', marginBottom: '20px' }}
+          >
+            Connected Development Tools
+          </h3>
+          <div
+            className="fade-in"
+            style={{ textAlign: 'center', marginBottom: '30px' }}
+          >
+            <img
+              src="/connected_devtools.png"
+              alt="Research CLI Connected Development Tools"
+              style={{
+                maxWidth: '100%',
+                height: 'auto',
+                borderRadius: '8px',
+                border: '1px solid #333',
+                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.5)',
+              }}
+            />
+            <p style={{ color: '#888', fontSize: '14px', marginTop: '10px' }}>
+              Integration with development tools and IDE extensions for seamless
+              research workflow
+            </p>
+          </div>
+        </div>
+
+        {/**
          * Configuration
          */}
         <h2 className="fade-in" id="configuration">

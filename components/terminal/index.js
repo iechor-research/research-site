@@ -67,12 +67,13 @@ const Terminal = () => {
           {lineCount >= 2 && renderLine('# Fully extensible')}
           {lineCount >= 3 &&
             renderLine('# Install themes and plugins from the command line')}
-          {lineCount >= 4 && renderLine('hyper i hyper-rose-pine')}
+          {lineCount >= 4 &&
+            renderLine('research-cli i research-cli-rose-pine')}
           {lineCount >= 5 && (
             <>
               <p className={styles.green}>
                 <Line
-                  text="hyper-rose-pine installed successfully!"
+                  text="research-cli-rose-pine installed successfully!"
                   noPrompt
                   noCaret
                 />

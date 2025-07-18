@@ -1,9 +1,9 @@
 {
-  "name": "hyper-site",
+  "name": "research-cli-site",
   "private": true,
   "version": "1.3.0",
-  "description": "The official website for the Hyper terminal",
-  "repository": "vercel/hyper-site",
+  "description": "The official website for the Research CLI",
+  "repository": "iechor-research/research-cli",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
@@ -13,7 +13,7 @@
   "dependencies": {
     "@mdx-js/loader": "^1.6.4",
     "@mdx-js/react": "^1.6.4",
-    "@next/mdx": "^9.4.2",
+    "@next/mdx": "^9.5.5",
     "copee": "^1.0.6",
     "husky": "^4.2.5",
     "image-size": "^0.9.3",

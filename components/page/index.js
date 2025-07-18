@@ -7,7 +7,7 @@ export default ({
   children,
   title = 'Hyper™',
   description = 'A terminal built on web technologies',
-  image = 'https://assets.vercel.com/image/upload/v1590627842/hyper/og-image-3.png',
+  image = 'https://assets.vercel.com/image/upload/v1590627842/research-cli/og-image-3.png',
 }) => {
   const { search } = useSearch()
 
@@ -36,7 +36,7 @@ export default ({
         <meta property="og:image" content={image} />
 
         {/* URL */}
-        <meta property="og:url" content="https://hyper.is" />
+        <meta property="og:url" content="https://research-cli.is" />
         <meta name="twitter:site" content="@vercel" />
 
         {/* General */}

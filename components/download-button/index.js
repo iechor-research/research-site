@@ -10,7 +10,7 @@ const DownloadButton = () => {
       <div className={styles.doubleWrap}>
         <a
           className={styles.root}
-          href="https://releases.hyper.is/download/mac"
+          href="https://releases.research-cli.is/download/mac"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -19,7 +19,7 @@ const DownloadButton = () => {
         </a>
         <a
           className={styles.root}
-          href="https://releases.hyper.is/download/mac_arm64"
+          href="https://releases.research-cli.is/download/mac_arm64"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -32,7 +32,7 @@ const DownloadButton = () => {
     return (
       <a
         className={styles.root}
-        href="https://releases.hyper.is/download/win"
+        href="https://releases.research-cli.is/download/win"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -44,7 +44,7 @@ const DownloadButton = () => {
     return (
       <a
         className={styles.root}
-        href="https://releases.hyper.is/download/rpm"
+        href="https://releases.research-cli.is/download/rpm"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -56,7 +56,7 @@ const DownloadButton = () => {
     return (
       <a
         className={styles.root}
-        href="https://releases.hyper.is/download/deb"
+        href="https://releases.research-cli.is/download/deb"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -68,7 +68,7 @@ const DownloadButton = () => {
     return (
       <a
         className={styles.root}
-        href="https://releases.hyper.is/download/AppImage"
+        href="https://releases.research-cli.is/download/AppImage"
         target="_blank"
         rel="noopener noreferrer"
       >

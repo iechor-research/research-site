@@ -1,14 +1,14 @@
 [
   {
-    "name": "hypercwd",
+    "name": "research-clicwd",
     "description": "Opens new tabs with the same directory as the current tab in Hyper for OS X, Linux, and Windows.",
     "type": "plugin",
-    "preview": "https://raw.githubusercontent.com/hharnisc/hypercwd/master/newTabs.gif",
+    "preview": "https://raw.githubusercontent.com/hharnisc/research-clicwd/master/newTabs.gif",
     "dateAdded": "1522253281560",
     "featured": true
   },
   {
-    "name": "hyper-search",
+    "name": "research-cli-search",
     "description": "Extension for Hyper that allows you to search text in your terminal.",
     "type": "plugin",
     "preview": "https://media.giphy.com/media/xUA7aXl1VWN460yCju/giphy.gif",
@@ -16,15 +16,15 @@
     "featured": true
   },
   {
-    "name": "hyper-pane",
+    "name": "research-cli-pane",
     "description": "Extension for Hyper.app to enhance pane navigation. Navigate through panes with arrows, jump directly to a specific pane with digit, change focus on mouse hover or temporarily maximize a pane.",
     "type": "plugin",
-    "preview": "https://hyper-plugin-screenshots.now.sh/hyper-pane.gif",
+    "preview": "https://research-cli-plugin-screenshots.now.sh/research-cli-pane.gif",
     "dateAdded": "1521644449784",
     "featured": true
   },
   {
-    "name": "hyperpower",
+    "name": "research-clipower",
     "description": "Extension for Hyper that turns on power mode, with bonus wow mode",
     "type": "plugin",
     "preview": "https://cloud.githubusercontent.com/assets/13041/16820268/13c9bfe6-4905-11e6-8fe4-baf8fc8d9293.gif",
@@ -32,7 +32,7 @@
     "featured": true
   },
   {
-    "name": "hyper-native",
+    "name": "research-cli-native",
     "description": "Make Hyper adapt to the macOS UI",
     "type": "theme",
     "preview": "https://i.imgur.com/eeRssvz.png",
@@ -44,10 +44,10 @@
     "featured": true
   },
   {
-    "name": "hyper-snazzy",
+    "name": "research-cli-snazzy",
     "description": "Elegant Hyper theme with bright colors",
     "type": "theme",
-    "preview": "https://hyper-plugin-screenshots.now.sh/hyper-snazzy.png",
+    "preview": "https://research-cli-plugin-screenshots.now.sh/research-cli-snazzy.png",
     "colors": [
       "#282a36",
       "#eff0eb",
@@ -59,7 +59,7 @@
     "name": "verminal",
     "description": "A beautiful theme for Hyper and other developer tools",
     "type": "theme",
-    "preview": "https://hyper-plugin-screenshots.now.sh/verminal.png",
+    "preview": "https://research-cli-plugin-screenshots.now.sh/verminal.png",
     "colors": [
       "rgba(0, 0, 0, 0.65)",
       "#FFFFFF",
@@ -69,10 +69,10 @@
     "featured": true
   },
   {
-    "name": "hyper-material-theme",
+    "name": "research-cli-material-theme",
     "description": "Material theme for Hyper!",
     "type": "theme",
-    "preview": "https://hyper-plugin-screenshots.now.sh/hyper-material-theme.png",
+    "preview": "https://research-cli-plugin-screenshots.now.sh/research-cli-material-theme.png",
     "colors": [
       "rgb(38, 50, 56)",
       "#ECEFF1",
@@ -82,10 +82,10 @@
     "featured": true
   },
   {
-    "name": "hyper-dracula",
+    "name": "research-cli-dracula",
     "description": "A dark theme for Hyper",
     "type": "theme",
-    "preview": "https://hyper-plugin-screenshots.now.sh/hyper-dracula.png",
+    "preview": "https://research-cli-plugin-screenshots.now.sh/research-cli-dracula.png",
     "colors": [
       "#282a36",
       "#f8f8f2",
@@ -94,7 +94,7 @@
     "dateAdded": "1521644449784"
   },
   {
-    "name": "shades-of-purple-hyper",
+    "name": "shades-of-purple-research-cli",
     "description": "Professional Hyper™ Terminal theme with hand-picked & bold shades of purple 💜 to go along with your command line usage. Love purple, coz. purple can be genius.",
     "type": "theme",
     "preview": "https://raw.githubusercontent.com/ahmadawais/Shades-of-Purple-Hyper/master/images/Shades-of-Purple-Hyper.gif",
@@ -108,10 +108,10 @@
     "dateAdded": "1523965034087"
   },
   {
-    "name": "hyper-chesterish",
+    "name": "research-cli-chesterish",
     "description": "Chesterish Theme for Hyper based on Jupyter schemes",
     "type": "theme",
-    "preview": "https://hyper-plugin-screenshots.now.sh/hyper-chesterish.png",
+    "preview": "https://research-cli-plugin-screenshots.now.sh/research-cli-chesterish.png",
     "colors": [
       "#293340",
       "#CDD2E9",
@@ -120,14 +120,14 @@
     "dateAdded": "1522254985394"
   },
   {
-    "name": "hyper-tabs-enhanced",
+    "name": "research-cli-tabs-enhanced",
     "description": "Enhanced Tabs Plugin for Hyper. Matches any theme.",
     "type": "plugin",
     "preview": "https://cloud.githubusercontent.com/assets/1430576/22143133/35d9a170-def9-11e6-8d0f-047fb1c64e97.png",
     "dateAdded": "1522256706135"
   },
   {
-    "name": "hyper-solarized",
+    "name": "research-cli-solarized",
     "description": "Highly customizable Solarized theme for the Hyper terminal",
     "type": "theme",
     "preview": "https://i.imgur.com/JdT64Kc.gif",
@@ -141,10 +141,10 @@
     "dateAdded": "1529828592"
   },
   {
-    "name": "hyper-solarized-dark",
+    "name": "research-cli-solarized-dark",
     "description": "A port of the Solarized Dark theme for Hyper.app",
     "type": "theme",
-    "preview": "https://hyper-plugin-screenshots.now.sh/hyper-solarized-dark.png",
+    "preview": "https://research-cli-plugin-screenshots.now.sh/research-cli-solarized-dark.png",
     "colors": [
       "#002b36",
       "#839496",
@@ -153,10 +153,10 @@
     "dateAdded": "1522257368300"
   },
   {
-    "name": "hyper-solarized-light",
+    "name": "research-cli-solarized-light",
     "description": "A port of the Solarized Light theme for Hyper.app",
     "type": "theme",
-    "preview": "https://hyper-plugin-screenshots.now.sh/hyper-solarized-light.png",
+    "preview": "https://research-cli-plugin-screenshots.now.sh/research-cli-solarized-light.png",
     "colors": [
       "#fdf6e3",
       "#839496",
@@ -166,10 +166,10 @@
     "featured": true
   },
   {
-    "name": "hyper-one-dark",
+    "name": "research-cli-one-dark",
     "description": "Hyper.app theme based on the Atom One Dark theme.",
     "type": "theme",
-    "preview": "https://hyper-plugin-screenshots.now.sh/hyper-one-dark.png",
+    "preview": "https://research-cli-plugin-screenshots.now.sh/research-cli-one-dark.png",
     "colors": [
       "#282c34",
       "#abb2bf",
@@ -178,10 +178,10 @@
     "dateAdded": "1522257801910"
   },
   {
-    "name": "hyper-one-light",
+    "name": "research-cli-one-light",
     "description": "Atom One Light theme for Hyper",
     "type": "theme",
-    "preview": "https://hyper-plugin-screenshots.now.sh/hyper-one-light.png",
+    "preview": "https://research-cli-plugin-screenshots.now.sh/research-cli-one-light.png",
     "colors": [
       "#fafafa",
       "#383a42",
@@ -190,17 +190,17 @@
     "dateAdded": "1522257801910"
   },
   {
-    "name": "hyper-broadcast",
+    "name": "research-cli-broadcast",
     "description": "Extension for Hyper.app to broadcast user inputs to multiple terms.",
     "type": "plugin",
-    "preview": "https://hyper-plugin-screenshots.now.sh/hyper-broadcast.gif",
+    "preview": "https://research-cli-plugin-screenshots.now.sh/research-cli-broadcast.gif",
     "dateAdded": "1522261645153"
   },
   {
-    "name": "hyper-flat",
+    "name": "research-cli-flat",
     "description": "A flat theme for Hyper",
     "type": "theme",
-    "preview": "https://rawgit.com/Kikobeats/hyper-flat/master/demo.png",
+    "preview": "https://rawgit.com/Kikobeats/research-cli-flat/master/demo.png",
     "colors": [
       "#2d3e4f",
       "#dadfdd",
@@ -209,17 +209,17 @@
     "dateAdded": "1523900385213"
   },
   {
-    "name": "hyper-arc-dark-controls",
+    "name": "research-cli-arc-dark-controls",
     "description": "Arc-themed window controls for Hyper",
     "type": "plugin",
-    "preview": "https://dev.moso.io/hyper/hyper-arc-dark-controls/screenshot.png",
+    "preview": "https://dev.moso.io/research-cli/research-cli-arc-dark-controls/screenshot.png",
     "dateAdded": "1523950045916"
   },
   {
-    "name": "hyper-electron-highlighter",
+    "name": "research-cli-electron-highlighter",
     "description": "A theme for Hyper based on electron-highlighter-syntax for Atom",
     "type": "theme",
-    "preview": "https://cdn.rawgit.com/mikemcbride/hyper-electron-highlighter/997a6ba6/screenshot.png",
+    "preview": "https://cdn.rawgit.com/mikemcbride/research-cli-electron-highlighter/997a6ba6/screenshot.png",
     "colors": [
       "#212836",
       "#6af699",
@@ -233,10 +233,10 @@
     "dateAdded": "1523991462599"
   },
   {
-    "name": "hyper-website-theme",
+    "name": "research-cli-website-theme",
     "description": "A theme for Hyper based on the project website",
     "type": "theme",
-    "preview": "https://cdn.rawgit.com/mikemcbride/hyper-website-theme/259a039e597e24059266584abaefcde42fecac85/screenshot.png",
+    "preview": "https://cdn.rawgit.com/mikemcbride/research-cli-website-theme/259a039e597e24059266584abaefcde42fecac85/screenshot.png",
     "colors": [
       "#000000",
       "#50e3c2",
@@ -245,10 +245,10 @@
     "dateAdded": "1523991462598"
   },
   {
-    "name": "hyper-firefox-devtools",
+    "name": "research-cli-firefox-devtools",
     "description": "A theme for Hyper based on the Firefox devtools colors",
     "type": "theme",
-    "preview": "https://cdn.rawgit.com/mikemcbride/hyper-firefox-devtools/16104778ff9240a58f066427fb2628745ea66548/screenshot.png",
+    "preview": "https://cdn.rawgit.com/mikemcbride/research-cli-firefox-devtools/16104778ff9240a58f066427fb2628745ea66548/screenshot.png",
     "colors": [
       "#0c0c0d",
       "#75bfff",
@@ -257,10 +257,10 @@
     "dateAdded": "1523991462597"
   },
   {
-    "name": "hyper-mono-christmas",
+    "name": "research-cli-mono-christmas",
     "description": "A monochrome theme for Hyper with red and green",
     "type": "theme",
-    "preview": "https://cdn.rawgit.com/mikemcbride/hyper-mono-christmas/9176e250/screenshot.png",
+    "preview": "https://cdn.rawgit.com/mikemcbride/research-cli-mono-christmas/9176e250/screenshot.png",
     "colors": [
       "#181818",
       "#ff5869",
@@ -281,24 +281,24 @@
     "dateAdded": "1524048709796"
   },
   {
-    "name": "hyper-opacity",
+    "name": "research-cli-opacity",
     "description": "Set the opacity of your Hyper window.",
     "type": "plugin",
-    "preview": "https://raw.githubusercontent.com/lucleray/hyper-opacity/master/demo-big.gif",
+    "preview": "https://raw.githubusercontent.com/lucleray/research-cli-opacity/master/demo-big.gif",
     "dateAdded": "1524057572112"
   },
   {
-    "name": "hyper-dark-scrollbar",
+    "name": "research-cli-dark-scrollbar",
     "description": "Dark and sleek scrollbar for Hyper",
     "type": "plugin",
-    "preview": "https://dev.moso.io/hyper/hyper-dark-scrollbar/demo.png",
+    "preview": "https://dev.moso.io/research-cli/research-cli-dark-scrollbar/demo.png",
     "dateAdded": "1524043008207"
   },
   {
-    "name": "hyper-whimsy",
+    "name": "research-cli-whimsy",
     "description": "A whimsical theme for Hyper",
     "type": "theme",
-    "preview": "https://hyper-whimsy.now.sh/",
+    "preview": "https://research-cli-whimsy.now.sh/",
     "colors": [
       "#29283b",
       "#b3b0d6"
@@ -306,7 +306,7 @@
     "dateAdded": "1524007869655"
   },
   {
-    "name": "hyper-oceanic-next",
+    "name": "research-cli-oceanic-next",
     "description": "Oceanic Next theme for Hyper",
     "type": "theme",
     "preview": "https://user-images.githubusercontent.com/2156395/39155663-d2a2c972-474a-11e8-9dc4-59e52ab0365f.png",
@@ -321,45 +321,45 @@
     "dateAdded": "1524521526149"
   },
   {
-    "name": "hyper-savetext",
+    "name": "research-cli-savetext",
     "description": "Save text from your Hyper terminal to a file",
     "type": "plugin",
-    "preview": "https://raw.githubusercontent.com/neil-orans/hyper-savetext/master/screenshots/hyperstore-bg-image.png",
+    "preview": "https://raw.githubusercontent.com/neil-orans/research-cli-savetext/master/screenshots/research-clistore-bg-image.png",
     "dateAdded": "1524611024916"
   },
   {
-    "name": "hyper-quit",
+    "name": "research-cli-quit",
     "description": "Quit Hyper on macOS when the last window is closed",
     "type": "plugin",
-    "preview": "https://raw.githubusercontent.com/cblecker/hyper-quit/master/hyper-quit.gif",
+    "preview": "https://raw.githubusercontent.com/cblecker/research-cli-quit/master/research-cli-quit.gif",
     "dateAdded": "1524261756961"
   },
   {
-    "name": "hyper-final-say",
+    "name": "research-cli-final-say",
     "type": "plugin",
-    "description": "Allow user-set settings in .hyper.js overrides any plugin or theme defaults.",
-    "preview": "https://hyper-final-say.now.sh",
+    "description": "Allow user-set settings in .research-cli.js overrides any plugin or theme defaults.",
+    "preview": "https://research-cli-final-say.now.sh",
     "dateAdded": "1529237416938"
   },
   {
-    "name": "hyper-active-tab",
+    "name": "research-cli-active-tab",
     "description": "Add a symbol to the active tab in your Hyper.app terminal",
     "type": "plugin",
-    "preview": "https://raw.githubusercontent.com/lucleray/hyper-active-tab/master/demo/no-theme.png",
+    "preview": "https://raw.githubusercontent.com/lucleray/research-cli-active-tab/master/demo/no-theme.png",
     "dateAdded": "1525908495226"
   },
   {
-    "name": "hyper-single-instance",
+    "name": "research-cli-single-instance",
     "description": "Open a new tab instead of a new window instance when opening Hyper.",
     "type": "plugin",
-    "preview": "https://raw.githubusercontent.com/ivanwonder/hyper-single-instance/master/demo.gif",
+    "preview": "https://raw.githubusercontent.com/ivanwonder/research-cli-single-instance/master/demo.gif",
     "dateAdded": "1525831601786"
   },
   {
-    "name": "hyper-relaxed",
+    "name": "research-cli-relaxed",
     "description": "A theme to take a more relaxed view of things.",
     "type": "theme",
-    "preview": "https://cdn.rawgit.com/mischah/Relaxed/82a6174b/hyper.png",
+    "preview": "https://cdn.rawgit.com/mischah/Relaxed/82a6174b/research-cli.png",
     "colors": [
       "#bc5653",
       "#909d63",
@@ -371,7 +371,7 @@
     "dateAdded": "1524192925000"
   },
   {
-    "name": "hyper-subliminal-theme",
+    "name": "research-cli-subliminal-theme",
     "description": "Subliminal Hyper theme",
     "type": "theme",
     "preview": "https://user-images.githubusercontent.com/13620579/41205658-cf2e4a50-6cf7-11e8-9776-1f791b3c3c11.png",
@@ -387,7 +387,7 @@
     "dateAdded": "1528659686963"
   },
   {
-    "name": "hyper-corubo",
+    "name": "research-cli-corubo",
     "description": "A dark (i.e. cool) theme for Hyper",
     "type": "theme",
     "preview": "https://user-images.githubusercontent.com/958723/39779572-f74d3c8a-52df-11e8-8260-805cbb0f4d3b.png",
@@ -404,10 +404,10 @@
     "dateAdded": "1521644449784"
   },
   {
-    "name": "hyper-pokemon",
+    "name": "research-cli-pokemon",
     "description": "Tailor-made Pokémon themes for your Hyper terminal",
     "type": "theme",
-    "preview": "https://raw.githubusercontent.com/klauscfhq/hyper-pokemon/356542cd/media/screen%402x.png",
+    "preview": "https://raw.githubusercontent.com/klauscfhq/research-cli-pokemon/356542cd/media/screen%402x.png",
     "colors": [
       "#F7DE82",
       "#E28638",
@@ -416,19 +416,19 @@
     "dateAdded": "1524699300332"
   },
   {
-    "name": "hyper-vivifyscrum",
+    "name": "research-cli-vivifyscrum",
     "description": "VivifyScrum Extension for Hyper that allows you to take a quick look to assigned Items...",
     "type": "plugin",
-    "preview": "https://s1.gifyu.com/images/hyper-vivifyscrum.gif",
+    "preview": "https://s1.gifyu.com/images/research-cli-vivifyscrum.gif",
     "dateAdded": "1526135338926"
   },
   {
-    "name": "hyper-night-owl",
+    "name": "research-cli-night-owl",
     "description":
       "A beautiful theme for the Hyper terminal based on the Night Owl VS Code dark theme, which is optimized for working at night, accessibility, and colorblindness.",
     "type": "theme",
     "preview":
-      "https://raw.githubusercontent.com/pbomb/hyper-night-owl/master/other/terminal.png",
+      "https://raw.githubusercontent.com/pbomb/research-cli-night-owl/master/other/terminal.png",
     "colors": [
       "#011627",
       "#EF5350",
@@ -442,10 +442,10 @@
     "dateAdded": "1527433775046"
   },
   {
-    "name": "hyperocean",
+    "name": "research-cliocean",
     "description": "Deep oceanic blue Hyper theme",
     "type": "theme",
-    "preview": "https://raw.githubusercontent.com/klauscfhq/hyperocean/master/media/screen.png",
+    "preview": "https://raw.githubusercontent.com/klauscfhq/research-cliocean/master/media/screen.png",
     "colors": [
       "#0F111A",
       "#3A75C4",
@@ -455,7 +455,7 @@
     "dateAdded": "1530561835873"
   },
   {
-    "name": "hyper-named-css-colors",
+    "name": "research-cli-named-css-colors",
     "description": "A Hyper theme based on named CSS colors.",
     "type": "theme",
     "preview": "https://file-euoceavftd.now.sh/screenshot.png",
@@ -470,17 +470,17 @@
     "dateAdded": "1537397951166"
   },
   {
-    "name": "hyper-fading-scrollbar",
-    "description": "A hyper plugin that fades the scrollbar when not in use.",
+    "name": "research-cli-fading-scrollbar",
+    "description": "A research-cli plugin that fades the scrollbar when not in use.",
     "type": "plugin",
     "preview": "https://file-ewlrgwalzv.now.sh/kapture.gif",
     "dateAdded": "1537398459186"
   },
   {
-    "name": "hyper-afterglow",
+    "name": "research-cli-afterglow",
     "description": "The theme based on Afterglow Theme for Sublime Text.",
     "type": "theme",
-    "preview": "https://github.com/andooown/hyper-afterglow/raw/images/screenshot.png",
+    "preview": "https://github.com/andooown/research-cli-afterglow/raw/images/screenshot.png",
     "colors": [
       "#202020",
       "#151515",
@@ -503,21 +503,21 @@
     "dateAdded": "1543683658866"
   },
   {
-    "name": "hyper-init",
+    "name": "research-cli-init",
     "description": "The ultimate and most complete extension to initialize commands before and after Hyper terminal starts",
     "type": "plugin",
-    "preview": "https://raw.githubusercontent.com/daltonmenezes/hyper-init/master/img/hyper-init.gif",
+    "preview": "https://raw.githubusercontent.com/daltonmenezes/research-cli-init/master/img/research-cli-init.gif",
     "dateAdded": "1541659140469"
   },  
   {
-    "name": "hyper-launch-menu",
+    "name": "research-cli-launch-menu",
     "description": "Launch more than one kind of shell from the menu",
     "type": "plugin",
-    "preview": "https://gitlab.com/zach-geek/hyper-launch-menu/raw/d74e04abac09dcd0fa20bbd66c6a44980a3dd210/screen.gif",
+    "preview": "https://gitlab.com/zach-geek/research-cli-launch-menu/raw/d74e04abac09dcd0fa20bbd66c6a44980a3dd210/screen.gif",
     "dateAdded": "1541637233639"
   },
   {
-    "name": "xi-hyper",
+    "name": "xi-research-cli",
     "description": "Minimal monochrome theme for Hyper",
     "type": "theme",
     "preview": "https://raw.githubusercontent.com/pacocoursey/Xi-Hyper/master/assets/screenshot.png",
@@ -530,18 +530,18 @@
     "dateAdded": "1537851176033"
   },
   {
-    "name": "hyper-yes",
+    "name": "research-cli-yes",
     "description": "Answers 'Terminate batch job (y/n)' with a resounding Y for you",
     "type": "plugin",
-    "preview": "https://raw.githubusercontent.com/albertjan/hyper-yes/master/hyper-yes.gif",
+    "preview": "https://raw.githubusercontent.com/albertjan/research-cli-yes/master/research-cli-yes.gif",
     "dateAdded": "1537803681724",
     "featured": false
   },
   {
-	  "name": "hyper-npm-theme",
-	  "description": "A smart hyper theme inspired by npm",
+	  "name": "research-cli-npm-theme",
+	  "description": "A smart research-cli theme inspired by npm",
 	  "type": "theme",
-	  "preview": "https://github.com/B3nnyL/hyper-npm-theme/raw/master/screenshot-1.png",
+	  "preview": "https://github.com/B3nnyL/research-cli-npm-theme/raw/master/screenshot-1.png",
 	  "colors": [
 		  "#f3f3f3",
       "#FFCD3A",
@@ -552,7 +552,7 @@
 	  "dateAdded": "1545314699015"
   },
   {
-    "name": "hyper-letters",
+    "name": "research-cli-letters",
     "description": "Extension for Hyper that drops entered letters physically in your terminal.",
     "type": "plugin",
     "preview": "https://user-images.githubusercontent.com/5426590/50339456-f687ea80-0517-11e9-9103-bfcda5634186.gif",
@@ -560,35 +560,35 @@
     "featured": false
   },
   {
-    "name": "hyper-shellect",
+    "name": "research-cli-shellect",
     "description": "A short and shweet shell shellection menu.",
     "type": "plugin",
-    "preview": "https://raw.githubusercontent.com/joskore/hyper-shellect/ddcc8a379fb13d9a5af60f9f952e184c77328bcc/hyper-shellect.gif",
+    "preview": "https://raw.githubusercontent.com/joskore/research-cli-shellect/ddcc8a379fb13d9a5af60f9f952e184c77328bcc/research-cli-shellect.gif",
     "dateAdded": "1546573670459"
   },
   {
-    "name": "hyper-highlight-active-pane",
+    "name": "research-cli-highlight-active-pane",
     "description": "Highlight the currently active pane in Hyper",
     "type": "plugin",
-    "preview": "https://raw.githubusercontent.com/yebrahim/hyper-highlight-active-pane/39d3a1b8b264b067abd6bf1cfce2f2179f6ccf89/screenshot.gif",
+    "preview": "https://raw.githubusercontent.com/yebrahim/research-cli-highlight-active-pane/39d3a1b8b264b067abd6bf1cfce2f2179f6ccf89/screenshot.gif",
     "dateAdded": "1546650712023"
   },
   {
-    "name": "hyper-cyberpunk",
+    "name": "research-cli-cyberpunk",
     "description": "Punk up your terminal.",
     "type": "theme",
     "colors": [
       "#FFFFFF",
       "#000000"
     ],
-    "preview": "https://github.com/manniefesto/hyper-cyberpunk/raw/2ae9b73949441f2526279b1acd213377aceb4d7e/cyberpunk.gif?raw=true",
+    "preview": "https://github.com/manniefesto/research-cli-cyberpunk/raw/2ae9b73949441f2526279b1acd213377aceb4d7e/cyberpunk.gif?raw=true",
     "dateAdded": "1547219532507"
   },
   {
-    "name": "hyper-hypest",
+    "name": "research-cli-hypest",
     "description": "A beautiful and minimal macOS theme with vibrancy",
     "type": "theme",
-    "preview": "https://github.com/dizzyup/hyper-hypest/raw/master/assets/preview.jpg?raw=true",
+    "preview": "https://github.com/dizzyup/research-cli-hypest/raw/master/assets/preview.jpg?raw=true",
     "colors": [
       "#ffffff",
       "#222222",
@@ -597,10 +597,10 @@
     "dateAdded": "1558342235115"
   },
   {
-    "name": "hyper-rose-pine",
+    "name": "research-cli-rose-pine",
     "type": "theme",
     "description": "All natural pine, faux fur and a bit of soho vibes for the classy minimalist.",
-    "preview": "https://github.com/fvrests/hyper-rose-pine/raw/main/assets/preview.png",
+    "preview": "https://github.com/fvrests/research-cli-rose-pine/raw/main/assets/preview.png",
     "colors": [
       "#191724",
       "#706e86",
@@ -615,14 +615,14 @@
     "dateAdded": "1582919913142"
   },
   {
-    "name": "hyper-tabs-autohide",
+    "name": "research-cli-tabs-autohide",
     "description": "Autohide all tabs.",
     "type": "plugin",
-    "preview": "https://github.com/jZhangTk/hyper-tabs-autohide/raw/master/hyper-tabs-autohide.gif",
+    "preview": "https://github.com/jZhangTk/research-cli-tabs-autohide/raw/master/research-cli-tabs-autohide.gif",
     "dateAdded": "1583633829078"
   },
   {
-    "name": "hyper-aura-theme",
+    "name": "research-cli-aura-theme",
     "type": "theme",
     "description": "A beautiful dark theme for Hyper terminal.",
     "colors": [

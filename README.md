@@ -1,10 +1,10 @@
-# hyper-site
+# research-cli-site
 
 The official website for the Hyper terminal
 
 ## Contribution
 
-Want to submit a plugin or theme to the Hyper Store? Follow [the guide on the website](https://hyper.is/store/submit).
+Want to submit a plugin or theme to the Hyper Store? Follow [the guide on the website](https://research-cli.is/store/submit).
 
 To submit a feature, bug fix, or enhancement to the Hyper website proceed as follows:
 
@@ -16,6 +16,6 @@ We really appreciate any contribution
 
 ## Related Repositories
 
-- [Hyper](https://github.com/vercel/hyper)
-- [Sample Plugin](https://github.com/vercel/hyperpower)
-- [Sample Theme](https://github.com/vercel/hyperyellow)
+- [Hyper](https://github.com/vercel/research-cli)
+- [Sample Plugin](https://github.com/vercel/research-clipower)
+- [Sample Theme](https://github.com/vercel/research-cliyellow)

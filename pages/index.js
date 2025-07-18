@@ -37,56 +37,45 @@ const installationTableData = [
     os: 'mac',
     renderText: () => (
       <>
-        <b>macOS</b> (.app)
+        <b>macOS</b> (Native)
       </>
     ),
-    path: 'mac',
-    arm64Path: 'mac_arm64',
+    path: 'darwin-x64',
+    arm64Path: 'darwin-arm64',
   },
   {
     os: 'windows',
     renderText: () => (
       <>
-        <b>Windows</b> (.exe)
+        <b>Windows</b> (Native)
       </>
     ),
-    path: 'win',
+    path: 'win32-x64',
   },
   {
     os: 'ubuntu',
     renderText: () => (
       <>
-        <b>Debian</b> (.deb)
+        <b>Linux</b> (Native)
       </>
     ),
-    path: 'deb',
-    arm64Path: 'deb_arm64',
+    path: 'linux-x64',
+    arm64Path: 'linux-arm64',
   },
   {
-    os: 'fedora',
+    os: 'npm',
     renderText: () => (
       <>
-        <b>Fedora</b> (.rpm)
+        <b>NPM</b> (All platforms)
       </>
     ),
-    path: 'rpm',
-    arm64Path: 'rpm_arm64',
-  },
-  {
-    os: 'linux',
-    renderText: () => (
-      <>
-        <b>More Linux distros</b> (.AppImage)
-      </>
-    ),
-    path: 'AppImage',
-    arm64Path: 'AppImage_arm64',
+    path: 'npm',
   },
 ]
 
 export async function getStaticProps() {
   const res = await fetch(
-    'https://api.github.com/repos/vercel/hyper/releases/latest'
+    'https://api.github.com/repos/iechor-research/research-cli/releases/latest'
   )
   const latestRelease = await res.json()
 
@@ -102,19 +91,27 @@ export default function HomePage({ latestRelease }) {
   const os = useOs()
 
   return (
-    <Page>
+    <Page
+      title="Research CLI - Academic Research Made Simple"
+      description="A comprehensive academic research tool with AI-powered features for literature search, paper writing, and journal submission."
+    >
       {/**
        * Hero
        */}
       <div className={heroStyles.root}>
-        <LogoBig className={heroStyles.logo} />
+        <div
+          className={heroStyles.logo}
+          style={{ fontSize: '4rem', fontWeight: 'bold', color: '#00d4ff' }}
+        >
+          Research CLI
+        </div>
         <div className={heroStyles.terminal}>
           <Terminal />
         </div>
         <div className={heroStyles.download}>
           <DownloadButton fixedWidth os={os} />
           <a className={heroStyles.other} href="#installation">
-            View other platforms
+            View installation options
           </a>
         </div>
       </div>
@@ -155,7 +152,11 @@ export default function HomePage({ latestRelease }) {
                       >
                         {archPath ? (
                           <a
-                            href={`https://releases.hyper.is/download/${archPath}`}
+                            href={
+                              archPath === 'npm'
+                                ? 'https://www.npmjs.com/package/@iechor/research-cli'
+                                : `https://github.com/iechor-research/research-cli/releases/download/${latestRelease.tag_name}/research-cli-${archPath}`
+                            }
                           >
                             <Download
                               height={12}
@@ -177,42 +178,81 @@ export default function HomePage({ latestRelease }) {
         </div>
 
         {/**
-         * Project goals
+         * Research Features
          */}
-        <h2 id="hashtag-goals">
-          <a href="#hashtag-goals">Project Goals</a>
+        <h2 id="research-features">
+          <a href="#research-features">Research Features</a>
         </h2>
         <p>
-          The goal of the project is to create a beautiful and extensible
-          experience for command-line interface users, built on open web
-          standards. In the beginning, our focus will be primarily around speed,
-          stability and the development of the correct API for extension
-          authors.
+          Research CLI provides a comprehensive suite of AI-powered tools for
+          academic research, from literature discovery to journal submission.
+          Our goal is to streamline the entire research workflow and make
+          academic research more efficient and accessible.
         </p>
-        <p>
-          In the future, we anticipate the community will come up with
-          innovative additions to enhance what could be the simplest, most
-          powerful and well-tested interface for productivity.
-        </p>
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+            gap: '20px',
+            margin: '20px 0',
+          }}
+        >
+          <div>
+            <h3>🔍 Literature Search</h3>
+            <p>
+              Search arXiv, PubMed, IEEE databases with AI-powered relevance
+              ranking
+            </p>
+          </div>
+          <div>
+            <h3>📝 AI Writing Assistant</h3>
+            <p>
+              Generate paper outlines, improve writing style, and format
+              citations automatically
+            </p>
+          </div>
+          <div>
+            <h3>📚 Bibliography Manager</h3>
+            <p>
+              Organize references with BibTeX support and citation network
+              analysis
+            </p>
+          </div>
+          <div>
+            <h3>🚀 Journal Submission</h3>
+            <p>
+              Find suitable journals and prepare submission packages
+              automatically
+            </p>
+          </div>
+        </div>
 
         {/**
-         * Extensions
+         * Quick Start
          */}
-        <h2 id="extensions">
-          <a href="#extensions">Extensions</a>
+        <h2 id="quick-start">
+          <a href="#quick-start">Quick Start</a>
         </h2>
         <p>
-          Extensions are available on npm. We encourage everyone to include{' '}
-          <code>hyper</code> in the <code>keywords</code>
-          field in <code>package.json</code>.
+          Get started with Research CLI in seconds. Install via npm and start
+          using powerful research commands.
         </p>
         <pre>
-          <code>$ npm search hyper</code>
+          <code>$ npm install -g @iechor/research-cli</code>
         </pre>
-        <p>
-          Then edit <PathLink os={os} path=".hyper.js" type="config" /> and add
-          it to <code>plugins</code>
-        </p>
+        <pre>
+          <code>$ research</code>
+        </pre>
+        <p>Try these research commands:</p>
+        <pre>
+          <code>/research search "machine learning"</code>
+        </pre>
+        <pre>
+          <code>/paper outline "AI Safety"</code>
+        </pre>
+        <pre>
+          <code>/submit prepare --journal "Nature"</code>
+        </pre>
         <pre>
           <code>
             module.exports = {'{'}
@@ -222,7 +262,7 @@ export default function HomePage({ latestRelease }) {
             {'\n'}
             {'  '}plugins: [{'\n'}
             {'    '}
-            <b>"hyperpower"</b>
+            <b>"research-clipower"</b>
             {'\n'}
             {'  '}]{'\n'}
             {'\n'}
@@ -231,8 +271,8 @@ export default function HomePage({ latestRelease }) {
         </pre>
         <p>
           <code>Hyper</code> will show a notification when your modules are
-          installed to <PathLink os={os} path=".hyper_plugins" type="plugins" />
-          .
+          installed to{' '}
+          <PathLink os={os} path=".research-cli_plugins" type="plugins" />.
         </p>
 
         {/**
@@ -243,8 +283,8 @@ export default function HomePage({ latestRelease }) {
         </h2>
         <p>
           All command keys can be changed. In order to change them, edit{' '}
-          <PathLink os={os} path=".hyper.js" type="config" /> and add your
-          desired change to <code>keymaps</code>.
+          <PathLink os={os} path=".research-cli.js" type="config" /> and add
+          your desired change to <code>keymaps</code>.
         </p>
         <p> Then Hyper will change the default with your custom change.</p>
         <p>
@@ -274,17 +314,17 @@ export default function HomePage({ latestRelease }) {
             <tbody>
               <tr>
                 <td>
-                  <a href="https://github.com/vercel/hyper/blob/master/app/keymaps/win32.json">
+                  <a href="https://github.com/vercel/research-cli/blob/master/app/keymaps/win32.json">
                     Windows
                   </a>
                 </td>
                 <td>
-                  <a href="https://github.com/vercel/hyper/blob/master/app/keymaps/linux.json">
+                  <a href="https://github.com/vercel/research-cli/blob/master/app/keymaps/linux.json">
                     Linux
                   </a>
                 </td>
                 <td>
-                  <a href="https://github.com/vercel/hyper/blob/master/app/keymaps/darwin.json">
+                  <a href="https://github.com/vercel/research-cli/blob/master/app/keymaps/darwin.json">
                     macOS
                   </a>
                 </td>
@@ -310,7 +350,7 @@ export default function HomePage({ latestRelease }) {
                   <strong>macOS</strong>
                 </td>
                 <td>
-                  <Path os="mac" path=".hyper.js" />
+                  <Path os="mac" path=".research-cli.js" />
                 </td>
               </tr>
               <tr>
@@ -318,7 +358,7 @@ export default function HomePage({ latestRelease }) {
                   <strong>Windows</strong>
                 </td>
                 <td>
-                  <Path os="windows" path=".hyper.js" />
+                  <Path os="windows" path=".research-cli.js" />
                 </td>
               </tr>
               <tr>
@@ -326,20 +366,21 @@ export default function HomePage({ latestRelease }) {
                   <strong>Linux</strong>
                 </td>
                 <td>
-                  <Path os="linux" path=".hyper.js" />
+                  <Path os="linux" path=".research-cli.js" />
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
         <p>
-          Note: config at <code>~/.hyper.js</code> still supported, but will be
-          ignored, if config in application directory present. Otherwise it will
-          be moved to the application directory at first run.
+          Note: config at <code>~/.research-cli.js</code> still supported, but
+          will be ignored, if config in application directory present. Otherwise
+          it will be moved to the application directory at first run.
         </p>
         <p>
           The <code>config</code> object seen above in{' '}
-          <PathLink path=".hyper.js" type="config" /> admits the following
+          <PathLink path=".research-cli.js" type="config" /> admits the
+          following
         </p>
         <div className="table large">
           <table className="config">
@@ -485,7 +526,7 @@ export default function HomePage({ latestRelease }) {
                 <td>
                   A list of overrides for the color palette. The names of the
                   keys represent the "ANSI 16", which can all be seen{' '}
-                  <a href="https://github.com/vercel/hyper/blob/master/app/utils/colors.js">
+                  <a href="https://github.com/vercel/research-cli/blob/master/app/utils/colors.js">
                     in the default config
                   </a>
                   .
@@ -631,7 +672,7 @@ export default function HomePage({ latestRelease }) {
         </p>
         <p>
           You can find additional details about plugin development{' '}
-          <a href="https://github.com/vercel/hyper/blob/master/PLUGINS.md">
+          <a href="https://github.com/vercel/research-cli/blob/master/PLUGINS.md">
             in the Hyper repository
           </a>
           .
@@ -1046,7 +1087,7 @@ export default function HomePage({ latestRelease }) {
                   <p>
                     A custom mapper for the state properties that{' '}
                     <a
-                      href="https://github.com/vercel/hyper/tree/master/lib/containers"
+                      href="https://github.com/vercel/research-cli/tree/master/lib/containers"
                       target="_blank"
                       rel="noopener"
                     >
@@ -1190,9 +1231,10 @@ export default function HomePage({ latestRelease }) {
         <p>In the future we might do this automatically.</p>
         <p>
           When developing, you can add your plugin to{' '}
-          <PathLink os={os} path=".hyper_plugins/local" type="plugins" /> and
-          then specify it under the <code>localPlugins</code> array in{' '}
-          <PathLink path=".hyper.js" type="config" />. We load new plugins:
+          <PathLink os={os} path=".research-cli_plugins/local" type="plugins" />{' '}
+          and then specify it under the <code>localPlugins</code> array in{' '}
+          <PathLink path=".research-cli.js" type="config" />. We load new
+          plugins:
         </p>
         <ul>
           <li>Periodically (every few hours)</li>
@@ -1206,7 +1248,7 @@ export default function HomePage({ latestRelease }) {
         <ul>
           <li>
             Running <code>npm prune</code> and <code>npm install</code> in{' '}
-            <PathLink path=".hyper_plugins" type="plugins" />.
+            <PathLink path=".research-cli_plugins" type="plugins" />.
           </li>
           <li>
             Pruning the <code>require.cache</code> in both electron and the
@@ -1228,7 +1270,7 @@ export default function HomePage({ latestRelease }) {
                   <strong>macOS</strong>
                 </td>
                 <td>
-                  <Path os="mac" path=".hyper_plugins" />
+                  <Path os="mac" path=".research-cli_plugins" />
                 </td>
               </tr>
               <tr>
@@ -1236,7 +1278,7 @@ export default function HomePage({ latestRelease }) {
                   <strong>Windows</strong>
                 </td>
                 <td>
-                  <Path os="windows" path=".hyper_plugins" />
+                  <Path os="windows" path=".research-cli_plugins" />
                 </td>
               </tr>
               <tr>
@@ -1244,15 +1286,15 @@ export default function HomePage({ latestRelease }) {
                   <strong>Linux</strong>
                 </td>
                 <td>
-                  <Path os="linux" path=".hyper_plugins" />
+                  <Path os="linux" path=".research-cli_plugins" />
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
         <p>
-          Note: plugins at <code>~/.hyper_plugins</code> still supported, but
-          will be ignored, if plugins in application directory present.
+          Note: plugins at <code>~/.research-cli_plugins</code> still supported,
+          but will be ignored, if plugins in application directory present.
           Otherwise they will be moved to the application directory at first
           run.
         </p>
@@ -1464,15 +1506,15 @@ export default function HomePage({ latestRelease }) {
         <p>
           All the{' '}
           <a
-            href="https://github.com/vercel/hyper/tree/master/lib/actions"
+            href="https://github.com/vercel/research-cli/tree/master/lib/actions"
             target="_blank"
             rel="noopener"
           >
             Redux actions
           </a>{' '}
           are available for you to handle through your middleware and reducers.
-          For an example, refer to the <a href="#hyperpower">Hyperpower</a>{' '}
-          reference plugin.
+          For an example, refer to the{' '}
+          <a href="#research-clipower">Hyperpower</a> reference plugin.
         </p>
         <p>Side effects occur in two fundamental forms:</p>
         <ul>
@@ -1556,7 +1598,7 @@ export default function HomePage({ latestRelease }) {
                 </td>
                 <td>
                   An <code>Object</code> with the <code>config</code> block from{' '}
-                  <PathLink path=".hyper.js" type="config" />.
+                  <PathLink path=".research-cli.js" type="config" />.
                 </td>
               </tr>
               <tr>
@@ -1660,8 +1702,8 @@ export default function HomePage({ latestRelease }) {
             {'}'});
           </code>
         </pre>
-        <h3 id="hyperyellow">
-          <a href="#hyperyellow">Example theme: Hyperyellow</a>
+        <h3 id="research-cliyellow">
+          <a href="#research-cliyellow">Example theme: Hyperyellow</a>
         </h3>
         <p>
           The following extension simply alters the config to add CSS and yellow
@@ -1669,7 +1711,7 @@ export default function HomePage({ latestRelease }) {
           <a
             target="_blank"
             rel="noopener"
-            href="https://github.com/vercel/hyperyellow/blob/29c4ac9748be74d7ad587b7077758ef26f6ce5c2/index.js#L1"
+            href="https://github.com/vercel/research-cliyellow/blob/29c4ac9748be74d7ad587b7077758ef26f6ce5c2/index.js#L1"
           >
             code
           </a>
@@ -1677,14 +1719,14 @@ export default function HomePage({ latestRelease }) {
         </p>
         <p style={{ textAlign: 'center' }}>
           <video
-            src="/hyperyellow.mp4"
+            src="/research-cliyellow.mp4"
             autoPlay
             muted
             playsInline
             loop
             width={446}
             height={332}
-            alt="hyperyellow_example"
+            alt="research-cliyellow_example"
           />
         </p>
         <p>
@@ -1747,20 +1789,20 @@ export default function HomePage({ latestRelease }) {
             {'}'});
           </code>
         </pre>
-        <h3 id="hyperpower">
-          <a href="#hyperpower">Example extension: Hyperpower</a>
+        <h3 id="research-clipower">
+          <a href="#research-clipower">Example extension: Hyperpower</a>
         </h3>
         <p>The following extension renders particles as the caret moves:</p>
         <p style={{ textAlign: 'center' }}>
           <video
-            src="/hyperpower.mp4"
+            src="/research-clipower.mp4"
             autoPlay
             muted
             playsInline
             loop
             width={456}
             height={340}
-            alt="hyperpower_example"
+            alt="research-clipower_example"
           />
         </p>
         <p>
@@ -1768,7 +1810,7 @@ export default function HomePage({ latestRelease }) {
           <a
             target="_blank"
             rel="noopener"
-            href="https://github.com/vercel/hyperpower/blob/master/index.js"
+            href="https://github.com/vercel/research-clipower/blob/master/index.js"
           >
             its code
           </a>
@@ -1779,7 +1821,7 @@ export default function HomePage({ latestRelease }) {
           <a
             target="_blank"
             rel="noopener"
-            href="https://github.com/vercel/hyper/tree/master/lib/actions"
+            href="https://github.com/vercel/research-cli/tree/master/lib/actions"
           >
             in the repository
           </a>
@@ -1869,7 +1911,7 @@ export default function HomePage({ latestRelease }) {
         <p>
           The extension then{' '}
           <a
-            href="https://github.com/vercel/hyperpower/blob/master/index.js#L51"
+            href="https://github.com/vercel/research-clipower/blob/master/index.js#L51"
             target="_blank"
             rel="noopener"
           >

@@ -11,12 +11,12 @@ If you want to add your plugin or theme to the Hyper Store list, follow the inst
 
 ## Create your plugin or theme
 
-You can find instructions and details about the process of creating a new plugin or theme in the [Hyper repository](https://github.com/vercel/hyper/blob/canary/PLUGINS.md).
+You can find instructions and details about the process of creating a new plugin or theme in the [Hyper repository](https://github.com/vercel/research-cli/blob/canary/PLUGINS.md).
 
 ## Publish your plugin or theme to npm
 
 For users to easily install your package, we use npm as the underlying service, therefore your plugin or theme needs to be published to npm.
-We suggest that your plugin is named with the prefix `hyper-` (for example `hyper-native`) and has either `hyper-plugin` or `hyper-theme` as a keyword depending on the type of your package.
+We suggest that your plugin is named with the prefix `research-cli-` (for example `research-cli-native`) and has either `research-cli-plugin` or `research-cli-theme` as a keyword depending on the type of your package.
 This will help users easily identify your package as a Hyper plugin or theme.
 
 Along with the previous suggestion, it'd be really helpful if your plugin is open-sourced so that the security conscious user will be able to review your code easily. To provide a repository in your `package.json` please refer to
@@ -24,13 +24,13 @@ Along with the previous suggestion, it'd be really helpful if your plugin is ope
 
 ## Submit your plugin or theme to Hyper Store
 
-Create a pull request in [the hyper-site repository](https://github.com/vercel/hyper-site), in which you should edit the `plugins.json` file and add the following information:
+Create a pull request in [the research-cli-site repository](https://github.com/vercel/research-cli-site), in which you should edit the `plugins.json` file and add the following information:
 
 ```
 {
   // The example is written in the desired format. You do not need to include these comments.
   // Your name must match the name which you published your package under on npm
-  "name": "hyper-snazzy",
+  "name": "research-cli-snazzy",
   // Describe your theme or plugin! If you have a description in your package.json, this is optional
   "description": "Elegant Hyper theme with bright colors",
   // List if your package is a "plugin" or "theme" so we can properly sort it
@@ -49,6 +49,6 @@ Create a pull request in [the hyper-site repository](https://github.com/vercel/h
 
 Also add a preview image of your plugin or theme to the `public/store` folder. Can be a gif, png, jpeg, etc. Recommended dimensions are 600x400 pixels but it'd be perfect if you could make the density 2x for retina screens (1200x800)
 
-After you've edited the `plugins.json` file and uploaded the preview image, you can submit a pull-request to [the repository](https://github.com/vercel/hyper-site) with your changes. Once you've done that, we'll review it and if it's all good, we'll accept!
+After you've edited the `plugins.json` file and uploaded the preview image, you can submit a pull-request to [the repository](https://github.com/vercel/research-cli-site) with your changes. Once you've done that, we'll review it and if it's all good, we'll accept!
 
 That's it, we're looking forward to seeing all of your plugins and themes added!

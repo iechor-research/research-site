@@ -23,7 +23,7 @@ export default ({ pluginName, open, onClose }) => {
   }
 
   const handleClick = () => {
-    const success = toClipboard(`hyper i ${pluginName}`)
+    const success = toClipboard(`research-cli i ${pluginName}`)
 
     if (success) {
       setCopied(true)
@@ -37,7 +37,7 @@ export default ({ pluginName, open, onClose }) => {
       <div className={styles.content}>
         <h2>Install {pluginName}</h2>
         <p>Run the following command in Hyper:</p>
-        <pre>hyper i {pluginName}</pre>
+        <pre>research-cli i {pluginName}</pre>
         <span className={styles.buttons}>
           <Link href="/store/security-notice" className={styles.security}>
             Security Notice
@@ -48,5 +48,5 @@ export default ({ pluginName, open, onClose }) => {
         </span>
       </div>
     </div>
-  );
+  )
 }

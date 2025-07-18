@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     // 使用已安装的 @iechor/research-cli 包
 
     // 解析命令参数
-    const args = command.split(' ').filter((arg) => arg.trim())
+    let args = command.split(' ').filter((arg) => arg.trim())
 
     // 如果是帮助命令，直接返回帮助信息
     if (args[0] === '/help' || args[0] === 'help') {
@@ -48,8 +48,13 @@ Note: This is a web interface to Research CLI using @iechor/research-cli package
     // 特殊处理一些常见命令
     if (args[0] === 'version') {
       args[0] = '--version'
+    } else if (args[0] === 'research' && args[1] === 'search') {
+      // 将 "research search" 转换为 "search"
+      args.shift() // 移除 "research"
+      const prompt = args.join(' ')
+      args = ['--prompt', prompt]
     } else if (
-      args[0] === 'research' ||
+      args[0] === 'search' ||
       args[0] === 'paper' ||
       args[0] === 'bib' ||
       args[0] === 'submit'

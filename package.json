@@ -16,6 +16,7 @@
     "@mdx-js/react": "^1.6.4",
     "@next/mdx": "^9.5.5",
     "copee": "^1.0.6",
+    "hast-to-hyperscript": "^9.0.1",
     "husky": "^4.2.5",
     "image-size": "^0.9.3",
     "lint-staged": "^10.2.3",

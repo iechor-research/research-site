@@ -15,7 +15,7 @@ export default () => {
     return (
       <>
         <Head>
-          <title>{`Hyper™ Store - Searching for "${query}"`}</title>
+          <title>{`Research-CLI™ Store - Searching for "${query}"`}</title>
         </Head>
         <PluginsList plugins={plugins} query={query} />
       </>
@@ -25,7 +25,7 @@ export default () => {
   return (
     <>
       <Head>
-        <title>{`Hyper™ Store - No results for "${query}"`}</title>
+        <title>{`Research-CLI™ Store - No results for "${query}"`}</title>
       </Head>
       <div className={styles.searchError}>
         Your search for "<b>{query}</b>" did not match any plugins or themes 😱{' '}

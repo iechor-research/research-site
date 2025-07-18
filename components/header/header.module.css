@@ -13,6 +13,9 @@
 
 .desktopNav {
   margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
 .link {
@@ -26,20 +29,16 @@
   color: var(--fg);
 }
 
-.desktopNav > a:not(:last-child) {
-  margin-right: 24px;
-}
+/* Remove old spacing rule since we're using gap now */
 
 .rightNav {
   margin: auto 0 auto auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.vercel {
-  font-size: 18px;
-  color: white;
-  font-weight: bold;
-  margin-left: 24px;
-}
+/* Removed vercel styles since we're not using it anymore */
 
 .mobileNav {
   composes: container from global;

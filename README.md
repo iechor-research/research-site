@@ -1,12 +1,12 @@
 # research-cli-site
 
-The official website for the Hyper terminal
+The official website for the Research-CLI terminal
 
 ## Contribution
 
-Want to submit a plugin or theme to the Hyper Store? Follow [the guide on the website](https://research-cli.is/store/submit).
+Want to submit a plugin or theme to the Research-CLI Store? Follow [the guide on the website](https://research-cli.is/store/submit).
 
-To submit a feature, bug fix, or enhancement to the Hyper website proceed as follows:
+To submit a feature, bug fix, or enhancement to the Research-CLI website proceed as follows:
 
 1. Clone this repo
 2. Within your terminal, run `npm install` to install the dependencies
@@ -16,6 +16,6 @@ We really appreciate any contribution
 
 ## Related Repositories
 
-- [Hyper](https://github.com/vercel/research-cli)
+- [Research-CLI](https://github.com/vercel/research-cli)
 - [Sample Plugin](https://github.com/vercel/research-clipower)
 - [Sample Theme](https://github.com/vercel/research-cliyellow)

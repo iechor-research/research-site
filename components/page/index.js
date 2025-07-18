@@ -5,8 +5,8 @@ import { useSearch } from 'lib/search-context'
 
 export default ({
   children,
-  title = 'Hyper™',
-  description = 'A terminal built on web technologies',
+  title = 'Research CLI™',
+  description = 'An AI-powered academic research tool',
   image = 'https://assets.vercel.com/image/upload/v1590627842/research-cli/og-image-3.png',
 }) => {
   const { search } = useSearch()

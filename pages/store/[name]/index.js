@@ -8,7 +8,7 @@ import Image from 'next/image'
 export default function StoreIndexPage({ plugin, npmData }) {
   return (
     <Page
-      title={`Hyper™ Store - ${plugin.name}`}
+      title={`Research-CLI™ Store - ${plugin.name}`}
       description={plugin.description}
       image={plugin.preview}
     >

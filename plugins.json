@@ -1,7 +1,7 @@
 [
   {
     "name": "research-clicwd",
-    "description": "Opens new tabs with the same directory as the current tab in Hyper for OS X, Linux, and Windows.",
+    "description": "Opens new tabs with the same directory as the current tab in Research-CLI for OS X, Linux, and Windows.",
     "type": "plugin",
     "preview": "https://raw.githubusercontent.com/hharnisc/research-clicwd/master/newTabs.gif",
     "dateAdded": "1522253281560",
@@ -9,7 +9,7 @@
   },
   {
     "name": "research-cli-search",
-    "description": "Extension for Hyper that allows you to search text in your terminal.",
+    "description": "Extension for Research-CLI that allows you to search text in your terminal.",
     "type": "plugin",
     "preview": "https://media.giphy.com/media/xUA7aXl1VWN460yCju/giphy.gif",
     "dateAdded": "1522253872987",
@@ -17,7 +17,7 @@
   },
   {
     "name": "research-cli-pane",
-    "description": "Extension for Hyper.app to enhance pane navigation. Navigate through panes with arrows, jump directly to a specific pane with digit, change focus on mouse hover or temporarily maximize a pane.",
+    "description": "Extension for Research-CLI.app to enhance pane navigation. Navigate through panes with arrows, jump directly to a specific pane with digit, change focus on mouse hover or temporarily maximize a pane.",
     "type": "plugin",
     "preview": "https://research-cli-plugin-screenshots.now.sh/research-cli-pane.gif",
     "dateAdded": "1521644449784",
@@ -25,7 +25,7 @@
   },
   {
     "name": "research-clipower",
-    "description": "Extension for Hyper that turns on power mode, with bonus wow mode",
+    "description": "Extension for Research-CLI that turns on power mode, with bonus wow mode",
     "type": "plugin",
     "preview": "https://cloud.githubusercontent.com/assets/13041/16820268/13c9bfe6-4905-11e6-8fe4-baf8fc8d9293.gif",
     "dateAdded": "1521644449784",
@@ -33,7 +33,7 @@
   },
   {
     "name": "research-cli-native",
-    "description": "Make Hyper adapt to the macOS UI",
+    "description": "Make Research-CLI adapt to the macOS UI",
     "type": "theme",
     "preview": "https://i.imgur.com/eeRssvz.png",
     "colors": [
@@ -45,7 +45,7 @@
   },
   {
     "name": "research-cli-snazzy",
-    "description": "Elegant Hyper theme with bright colors",
+    "description": "Elegant Research-CLI theme with bright colors",
     "type": "theme",
     "preview": "https://research-cli-plugin-screenshots.now.sh/research-cli-snazzy.png",
     "colors": [
@@ -57,7 +57,7 @@
   },
   {
     "name": "verminal",
-    "description": "A beautiful theme for Hyper and other developer tools",
+    "description": "A beautiful theme for Research-CLI and other developer tools",
     "type": "theme",
     "preview": "https://research-cli-plugin-screenshots.now.sh/verminal.png",
     "colors": [
@@ -70,7 +70,7 @@
   },
   {
     "name": "research-cli-material-theme",
-    "description": "Material theme for Hyper!",
+    "description": "Material theme for Research-CLI!",
     "type": "theme",
     "preview": "https://research-cli-plugin-screenshots.now.sh/research-cli-material-theme.png",
     "colors": [
@@ -83,7 +83,7 @@
   },
   {
     "name": "research-cli-dracula",
-    "description": "A dark theme for Hyper",
+    "description": "A dark theme for Research-CLI",
     "type": "theme",
     "preview": "https://research-cli-plugin-screenshots.now.sh/research-cli-dracula.png",
     "colors": [
@@ -95,9 +95,9 @@
   },
   {
     "name": "shades-of-purple-research-cli",
-    "description": "Professional Hyper™ Terminal theme with hand-picked & bold shades of purple 💜 to go along with your command line usage. Love purple, coz. purple can be genius.",
+    "description": "Professional Research-CLI™ Terminal theme with hand-picked & bold shades of purple 💜 to go along with your command line usage. Love purple, coz. purple can be genius.",
     "type": "theme",
-    "preview": "https://raw.githubusercontent.com/ahmadawais/Shades-of-Purple-Hyper/master/images/Shades-of-Purple-Hyper.gif",
+    "preview": "https://raw.githubusercontent.com/ahmadawais/Shades-of-Purple-Research-CLI/master/images/Shades-of-Purple-Research-CLI.gif",
     "colors": [
       "#2D2B55",
       "#6943ff",
@@ -109,7 +109,7 @@
   },
   {
     "name": "research-cli-chesterish",
-    "description": "Chesterish Theme for Hyper based on Jupyter schemes",
+    "description": "Chesterish Theme for Research-CLI based on Jupyter schemes",
     "type": "theme",
     "preview": "https://research-cli-plugin-screenshots.now.sh/research-cli-chesterish.png",
     "colors": [
@@ -121,14 +121,14 @@
   },
   {
     "name": "research-cli-tabs-enhanced",
-    "description": "Enhanced Tabs Plugin for Hyper. Matches any theme.",
+    "description": "Enhanced Tabs Plugin for Research-CLI. Matches any theme.",
     "type": "plugin",
     "preview": "https://cloud.githubusercontent.com/assets/1430576/22143133/35d9a170-def9-11e6-8d0f-047fb1c64e97.png",
     "dateAdded": "1522256706135"
   },
   {
     "name": "research-cli-solarized",
-    "description": "Highly customizable Solarized theme for the Hyper terminal",
+    "description": "Highly customizable Solarized theme for the Research-CLI terminal",
     "type": "theme",
     "preview": "https://i.imgur.com/JdT64Kc.gif",
     "colors": [
@@ -142,7 +142,7 @@
   },
   {
     "name": "research-cli-solarized-dark",
-    "description": "A port of the Solarized Dark theme for Hyper.app",
+    "description": "A port of the Solarized Dark theme for Research-CLI.app",
     "type": "theme",
     "preview": "https://research-cli-plugin-screenshots.now.sh/research-cli-solarized-dark.png",
     "colors": [
@@ -154,7 +154,7 @@
   },
   {
     "name": "research-cli-solarized-light",
-    "description": "A port of the Solarized Light theme for Hyper.app",
+    "description": "A port of the Solarized Light theme for Research-CLI.app",
     "type": "theme",
     "preview": "https://research-cli-plugin-screenshots.now.sh/research-cli-solarized-light.png",
     "colors": [
@@ -167,7 +167,7 @@
   },
   {
     "name": "research-cli-one-dark",
-    "description": "Hyper.app theme based on the Atom One Dark theme.",
+    "description": "Research-CLI.app theme based on the Atom One Dark theme.",
     "type": "theme",
     "preview": "https://research-cli-plugin-screenshots.now.sh/research-cli-one-dark.png",
     "colors": [
@@ -179,7 +179,7 @@
   },
   {
     "name": "research-cli-one-light",
-    "description": "Atom One Light theme for Hyper",
+    "description": "Atom One Light theme for Research-CLI",
     "type": "theme",
     "preview": "https://research-cli-plugin-screenshots.now.sh/research-cli-one-light.png",
     "colors": [
@@ -191,14 +191,14 @@
   },
   {
     "name": "research-cli-broadcast",
-    "description": "Extension for Hyper.app to broadcast user inputs to multiple terms.",
+    "description": "Extension for Research-CLI.app to broadcast user inputs to multiple terms.",
     "type": "plugin",
     "preview": "https://research-cli-plugin-screenshots.now.sh/research-cli-broadcast.gif",
     "dateAdded": "1522261645153"
   },
   {
     "name": "research-cli-flat",
-    "description": "A flat theme for Hyper",
+    "description": "A flat theme for Research-CLI",
     "type": "theme",
     "preview": "https://rawgit.com/Kikobeats/research-cli-flat/master/demo.png",
     "colors": [
@@ -210,14 +210,14 @@
   },
   {
     "name": "research-cli-arc-dark-controls",
-    "description": "Arc-themed window controls for Hyper",
+    "description": "Arc-themed window controls for Research-CLI",
     "type": "plugin",
     "preview": "https://dev.moso.io/research-cli/research-cli-arc-dark-controls/screenshot.png",
     "dateAdded": "1523950045916"
   },
   {
     "name": "research-cli-electron-highlighter",
-    "description": "A theme for Hyper based on electron-highlighter-syntax for Atom",
+    "description": "A theme for Research-CLI based on electron-highlighter-syntax for Atom",
     "type": "theme",
     "preview": "https://cdn.rawgit.com/mikemcbride/research-cli-electron-highlighter/997a6ba6/screenshot.png",
     "colors": [
@@ -234,7 +234,7 @@
   },
   {
     "name": "research-cli-website-theme",
-    "description": "A theme for Hyper based on the project website",
+    "description": "A theme for Research-CLI based on the project website",
     "type": "theme",
     "preview": "https://cdn.rawgit.com/mikemcbride/research-cli-website-theme/259a039e597e24059266584abaefcde42fecac85/screenshot.png",
     "colors": [
@@ -246,7 +246,7 @@
   },
   {
     "name": "research-cli-firefox-devtools",
-    "description": "A theme for Hyper based on the Firefox devtools colors",
+    "description": "A theme for Research-CLI based on the Firefox devtools colors",
     "type": "theme",
     "preview": "https://cdn.rawgit.com/mikemcbride/research-cli-firefox-devtools/16104778ff9240a58f066427fb2628745ea66548/screenshot.png",
     "colors": [
@@ -258,7 +258,7 @@
   },
   {
     "name": "research-cli-mono-christmas",
-    "description": "A monochrome theme for Hyper with red and green",
+    "description": "A monochrome theme for Research-CLI with red and green",
     "type": "theme",
     "preview": "https://cdn.rawgit.com/mikemcbride/research-cli-mono-christmas/9176e250/screenshot.png",
     "colors": [
@@ -270,7 +270,7 @@
   },
   {
     "name": "an-old-hype",
-    "description": "Customizable Hyper theme inspired by a galaxy far far away...",
+    "description": "Customizable Research-CLI theme inspired by a galaxy far far away...",
     "type": "theme",
     "preview": "https://cdn.rawgit.com/erikmueller/an-old-hype/master/screen.png",
     "colors": [
@@ -282,21 +282,21 @@
   },
   {
     "name": "research-cli-opacity",
-    "description": "Set the opacity of your Hyper window.",
+    "description": "Set the opacity of your Research-CLI window.",
     "type": "plugin",
     "preview": "https://raw.githubusercontent.com/lucleray/research-cli-opacity/master/demo-big.gif",
     "dateAdded": "1524057572112"
   },
   {
     "name": "research-cli-dark-scrollbar",
-    "description": "Dark and sleek scrollbar for Hyper",
+    "description": "Dark and sleek scrollbar for Research-CLI",
     "type": "plugin",
     "preview": "https://dev.moso.io/research-cli/research-cli-dark-scrollbar/demo.png",
     "dateAdded": "1524043008207"
   },
   {
     "name": "research-cli-whimsy",
-    "description": "A whimsical theme for Hyper",
+    "description": "A whimsical theme for Research-CLI",
     "type": "theme",
     "preview": "https://research-cli-whimsy.now.sh/",
     "colors": [
@@ -307,7 +307,7 @@
   },
   {
     "name": "research-cli-oceanic-next",
-    "description": "Oceanic Next theme for Hyper",
+    "description": "Oceanic Next theme for Research-CLI",
     "type": "theme",
     "preview": "https://user-images.githubusercontent.com/2156395/39155663-d2a2c972-474a-11e8-9dc4-59e52ab0365f.png",
     "colors": [
@@ -322,14 +322,14 @@
   },
   {
     "name": "research-cli-savetext",
-    "description": "Save text from your Hyper terminal to a file",
+    "description": "Save text from your Research-CLI terminal to a file",
     "type": "plugin",
     "preview": "https://raw.githubusercontent.com/neil-orans/research-cli-savetext/master/screenshots/research-clistore-bg-image.png",
     "dateAdded": "1524611024916"
   },
   {
     "name": "research-cli-quit",
-    "description": "Quit Hyper on macOS when the last window is closed",
+    "description": "Quit Research-CLI on macOS when the last window is closed",
     "type": "plugin",
     "preview": "https://raw.githubusercontent.com/cblecker/research-cli-quit/master/research-cli-quit.gif",
     "dateAdded": "1524261756961"
@@ -343,14 +343,14 @@
   },
   {
     "name": "research-cli-active-tab",
-    "description": "Add a symbol to the active tab in your Hyper.app terminal",
+    "description": "Add a symbol to the active tab in your Research-CLI.app terminal",
     "type": "plugin",
     "preview": "https://raw.githubusercontent.com/lucleray/research-cli-active-tab/master/demo/no-theme.png",
     "dateAdded": "1525908495226"
   },
   {
     "name": "research-cli-single-instance",
-    "description": "Open a new tab instead of a new window instance when opening Hyper.",
+    "description": "Open a new tab instead of a new window instance when opening Research-CLI.",
     "type": "plugin",
     "preview": "https://raw.githubusercontent.com/ivanwonder/research-cli-single-instance/master/demo.gif",
     "dateAdded": "1525831601786"
@@ -372,7 +372,7 @@
   },
   {
     "name": "research-cli-subliminal-theme",
-    "description": "Subliminal Hyper theme",
+    "description": "Subliminal Research-CLI theme",
     "type": "theme",
     "preview": "https://user-images.githubusercontent.com/13620579/41205658-cf2e4a50-6cf7-11e8-9776-1f791b3c3c11.png",
     "colors": [
@@ -388,7 +388,7 @@
   },
   {
     "name": "research-cli-corubo",
-    "description": "A dark (i.e. cool) theme for Hyper",
+    "description": "A dark (i.e. cool) theme for Research-CLI",
     "type": "theme",
     "preview": "https://user-images.githubusercontent.com/958723/39779572-f74d3c8a-52df-11e8-8260-805cbb0f4d3b.png",
     "colors": [
@@ -405,7 +405,7 @@
   },
   {
     "name": "research-cli-pokemon",
-    "description": "Tailor-made Pokémon themes for your Hyper terminal",
+    "description": "Tailor-made Pokémon themes for your Research-CLI terminal",
     "type": "theme",
     "preview": "https://raw.githubusercontent.com/klauscfhq/research-cli-pokemon/356542cd/media/screen%402x.png",
     "colors": [
@@ -417,7 +417,7 @@
   },
   {
     "name": "research-cli-vivifyscrum",
-    "description": "VivifyScrum Extension for Hyper that allows you to take a quick look to assigned Items...",
+    "description": "VivifyScrum Extension for Research-CLI that allows you to take a quick look to assigned Items...",
     "type": "plugin",
     "preview": "https://s1.gifyu.com/images/research-cli-vivifyscrum.gif",
     "dateAdded": "1526135338926"
@@ -425,7 +425,7 @@
   {
     "name": "research-cli-night-owl",
     "description":
-      "A beautiful theme for the Hyper terminal based on the Night Owl VS Code dark theme, which is optimized for working at night, accessibility, and colorblindness.",
+      "A beautiful theme for the Research-CLI terminal based on the Night Owl VS Code dark theme, which is optimized for working at night, accessibility, and colorblindness.",
     "type": "theme",
     "preview":
       "https://raw.githubusercontent.com/pbomb/research-cli-night-owl/master/other/terminal.png",
@@ -443,7 +443,7 @@
   },
   {
     "name": "research-cliocean",
-    "description": "Deep oceanic blue Hyper theme",
+    "description": "Deep oceanic blue Research-CLI theme",
     "type": "theme",
     "preview": "https://raw.githubusercontent.com/klauscfhq/research-cliocean/master/media/screen.png",
     "colors": [
@@ -456,7 +456,7 @@
   },
   {
     "name": "research-cli-named-css-colors",
-    "description": "A Hyper theme based on named CSS colors.",
+    "description": "A Research-CLI theme based on named CSS colors.",
     "type": "theme",
     "preview": "https://file-euoceavftd.now.sh/screenshot.png",
     "colors": [
@@ -504,7 +504,7 @@
   },
   {
     "name": "research-cli-init",
-    "description": "The ultimate and most complete extension to initialize commands before and after Hyper terminal starts",
+    "description": "The ultimate and most complete extension to initialize commands before and after Research-CLI terminal starts",
     "type": "plugin",
     "preview": "https://raw.githubusercontent.com/daltonmenezes/research-cli-init/master/img/research-cli-init.gif",
     "dateAdded": "1541659140469"
@@ -518,9 +518,9 @@
   },
   {
     "name": "xi-research-cli",
-    "description": "Minimal monochrome theme for Hyper",
+    "description": "Minimal monochrome theme for Research-CLI",
     "type": "theme",
-    "preview": "https://raw.githubusercontent.com/pacocoursey/Xi-Hyper/master/assets/screenshot.png",
+    "preview": "https://raw.githubusercontent.com/pacocoursey/Xi-Research-CLI/master/assets/screenshot.png",
     "colors": [
       "#212529",
       "#868e96",
@@ -553,7 +553,7 @@
   },
   {
     "name": "research-cli-letters",
-    "description": "Extension for Hyper that drops entered letters physically in your terminal.",
+    "description": "Extension for Research-CLI that drops entered letters physically in your terminal.",
     "type": "plugin",
     "preview": "https://user-images.githubusercontent.com/5426590/50339456-f687ea80-0517-11e9-9103-bfcda5634186.gif",
     "dateAdded": "1545390364689",
@@ -568,7 +568,7 @@
   },
   {
     "name": "research-cli-highlight-active-pane",
-    "description": "Highlight the currently active pane in Hyper",
+    "description": "Highlight the currently active pane in Research-CLI",
     "type": "plugin",
     "preview": "https://raw.githubusercontent.com/yebrahim/research-cli-highlight-active-pane/39d3a1b8b264b067abd6bf1cfce2f2179f6ccf89/screenshot.gif",
     "dateAdded": "1546650712023"
@@ -624,7 +624,7 @@
   {
     "name": "research-cli-aura-theme",
     "type": "theme",
-    "description": "A beautiful dark theme for Hyper terminal.",
+    "description": "A beautiful dark theme for Research-CLI terminal.",
     "colors": [
       "#1c1b22",
       "#4d4d4d",

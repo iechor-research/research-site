@@ -84,7 +84,7 @@ export default function StoreSourcePage({
 
   return (
     <Page
-      title={`Hyper™ Store - Source of ${plugin.name}`}
+      title={`Research-CLI™ Store - Source of ${plugin.name}`}
       description={plugin.description}
       image={plugin.preview}
     >

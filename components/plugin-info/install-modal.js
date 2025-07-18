@@ -36,7 +36,7 @@ export default ({ pluginName, open, onClose }) => {
       <div className={styles.backdrop} onClick={onClose} />
       <div className={styles.content}>
         <h2>Install {pluginName}</h2>
-        <p>Run the following command in Hyper:</p>
+        <p>Run the following command in Research-CLI:</p>
         <pre>research-cli i {pluginName}</pre>
         <span className={styles.buttons}>
           <Link href="/store/security-notice" className={styles.security}>

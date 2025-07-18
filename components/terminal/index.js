@@ -62,18 +62,18 @@ const Terminal = () => {
           <span className={styles.icon} />
         </div>
         <div className={styles.body}>
-          {renderLine('# Hyper is an Electron-based terminal')}
-          {lineCount >= 1 && renderLine('# Built on HTML/CSS/JS')}
-          {lineCount >= 2 && renderLine('# Fully extensible')}
+          {renderLine('# Research-CLI is an AI-powered research tool')}
+          {lineCount >= 1 && renderLine('# Built for academic research')}
+          {lineCount >= 2 &&
+            renderLine('# Literature search, writing, and submission')}
           {lineCount >= 3 &&
-            renderLine('# Install themes and plugins from the command line')}
-          {lineCount >= 4 &&
-            renderLine('research-cli i research-cli-rose-pine')}
+            renderLine('# Install and use from the command line')}
+          {lineCount >= 4 && renderLine('research search "machine learning"')}
           {lineCount >= 5 && (
             <>
               <p className={styles.green}>
                 <Line
-                  text="research-cli-rose-pine installed successfully!"
+                  text="Found 15 papers on machine learning research!"
                   noPrompt
                   noCaret
                 />

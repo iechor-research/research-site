@@ -29,12 +29,13 @@ export default () => {
     <>
       <header className={styles.header}>
         <Link href="/" className={styles.logo} aria-label="Research CLI logo">
-          <Logo width={31} height={23} />
+          <Logo width={45} height={23} />
         </Link>
 
         <nav className={styles.desktopNav}>
           <ActiveLink href="/research">Research Tools</ActiveLink>
           <ActiveLink href="/terminal">Web Terminal</ActiveLink>
+          <ActiveLink href="/#installation">Download</ActiveLink>
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -43,20 +44,11 @@ export default () => {
           >
             GitHub
           </a>
-          <ActiveLink href="/#installation">Download</ActiveLink>
-          <ActiveLink href="/blog">Blog</ActiveLink>
         </nav>
 
         <div className={styles.rightNav}>
+          <ActiveLink href="/blog">Blog</ActiveLink>
           <SearchBar />
-          <a
-            href="https://iechor.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.vercel}
-          >
-            ⚡
-          </a>
         </div>
 
         <span className={styles.toggle} onClick={toggle}>
@@ -71,6 +63,13 @@ export default () => {
         <Link href="/terminal">Web Terminal</Link>
         <Link href="/#installation">Download</Link>
         <Link href="/blog">Blog</Link>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/iechor-research/research-cli"
+        >
+          GitHub
+        </a>
         <SearchBar />
       </nav>
     </>

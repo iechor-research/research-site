@@ -112,32 +112,108 @@ export async function getStaticProps({ params }) {
     }
   }
 
-  const npmData = await (
-    await fetch(`https://api.npms.io/v2/package/${plugin.name}`)
-  ).json()
-
-  const pluginMeta = await (
-    await fetch(`https://unpkg.com/${plugin.name}@latest/?meta`)
-  ).json()
-
-  const filePaths = []
-
-  ;(function getFilePaths(root) {
-    for (const file of root.files) {
-      if (file.type === 'directory') {
-        getFilePaths(file)
-      }
-      if (file.type === 'file') {
-        filePaths.push(file.path)
-      }
-    }
-  })(pluginMeta)
-
+  let npmData = null
+  let pluginMeta = null
   const cache = {}
 
-  for (const path of filePaths) {
-    const res = await fetch(`https://unpkg.com/${plugin.name}@latest${path}`)
-    cache[path] = await res.text()
+  try {
+    const response = await fetch(
+      `https://api.npms.io/v2/package/${plugin.name}`
+    )
+    if (response.ok) {
+      npmData = await response.json()
+    } else {
+      console.warn(
+        `Failed to fetch npm data for ${plugin.name}: ${response.status}`
+      )
+    }
+  } catch (error) {
+    console.warn(`Error fetching npm data for ${plugin.name}:`, error.message)
+  }
+
+  // 如果 npm 数据不可用，创建一个默认的数据结构
+  if (!npmData || !npmData.collected || !npmData.collected.metadata) {
+    npmData = {
+      collected: {
+        metadata: {
+          name: plugin.name,
+          version: 'Unknown',
+          publisher: {
+            username: 'Unknown Author',
+            email: null,
+          },
+          links: {
+            repository: null,
+          },
+        },
+        npm: {
+          downloads: [null, null, { count: 0 }],
+        },
+      },
+    }
+  }
+
+  try {
+    const metaResponse = await fetch(
+      `https://unpkg.com/${plugin.name}@latest/?meta`
+    )
+    if (metaResponse.ok) {
+      pluginMeta = await metaResponse.json()
+
+      const filePaths = []
+
+      ;(function getFilePaths(root) {
+        for (const file of root.files) {
+          if (file.type === 'directory') {
+            getFilePaths(file)
+          }
+          if (file.type === 'file') {
+            filePaths.push(file.path)
+          }
+        }
+      })(pluginMeta)
+
+      for (const path of filePaths) {
+        try {
+          const res = await fetch(
+            `https://unpkg.com/${plugin.name}@latest${path}`
+          )
+          if (res.ok) {
+            cache[path] = await res.text()
+          }
+        } catch (error) {
+          console.warn(
+            `Error fetching file ${path} for ${plugin.name}:`,
+            error.message
+          )
+          cache[path] = '// Error loading file content'
+        }
+      }
+    } else {
+      console.warn(
+        `Failed to fetch plugin meta for ${plugin.name}: ${metaResponse.status}`
+      )
+    }
+  } catch (error) {
+    console.warn(
+      `Error fetching plugin meta for ${plugin.name}:`,
+      error.message
+    )
+  }
+
+  // 如果无法获取插件元数据，创建一个默认结构
+  if (!pluginMeta) {
+    pluginMeta = {
+      files: [
+        {
+          type: 'file',
+          path: '/README.md',
+        },
+      ],
+    }
+    cache[
+      '/README.md'
+    ] = `# ${plugin.name}\n\n${plugin.description}\n\nSource code is not available.`
   }
 
   return {

@@ -45,9 +45,44 @@ export default function StoreIndexPage({ plugin, npmData }) {
 }
 
 export const getStaticProps = async ({ params }) => {
-  const npmData = await (
-    await fetch(`https://api.npms.io/v2/package/${params.name}`)
-  ).json()
+  let npmData = null
+
+  try {
+    const response = await fetch(
+      `https://api.npms.io/v2/package/${params.name}`
+    )
+    if (response.ok) {
+      npmData = await response.json()
+    } else {
+      console.warn(
+        `Failed to fetch npm data for ${params.name}: ${response.status}`
+      )
+    }
+  } catch (error) {
+    console.warn(`Error fetching npm data for ${params.name}:`, error.message)
+  }
+
+  // 如果 npm 数据不可用，创建一个默认的数据结构
+  if (!npmData || !npmData.collected || !npmData.collected.metadata) {
+    npmData = {
+      collected: {
+        metadata: {
+          name: params.name,
+          version: 'Unknown',
+          publisher: {
+            username: 'Unknown Author',
+            email: null,
+          },
+          links: {
+            repository: null,
+          },
+        },
+        npm: {
+          downloads: [null, null, { count: 0 }],
+        },
+      },
+    }
+  }
 
   const plugin = {
     ...plugins.find((e) => e.name === params.name),

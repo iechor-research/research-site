@@ -1,65 +1,50 @@
 #!/bin/bash
 
-# Research CLI Website Deployment Script
-echo "🚀 Starting deployment of Research CLI website..."
+# Research CLI 网站部署脚本
+# 用法: ./deploy.sh
 
-# Server configuration
-SERVER_HOST="8.216.80.83"
-SERVER_USER="root"
-SERVER_PATH="/var/www/research-cli"
+set -e
 
-# Create server directory if it doesn't exist
-echo "📁 Creating server directory..."
-ssh ${SERVER_USER}@${SERVER_HOST} "mkdir -p ${SERVER_PATH}"
+echo "🚀 开始部署 Research CLI 网站..."
 
-# Upload files to server
-echo "📤 Uploading files to server..."
-rsync -avz --delete dist/ ${SERVER_USER}@${SERVER_HOST}:${SERVER_PATH}/
-
-# Set proper permissions
-echo "🔧 Setting permissions..."
-ssh ${SERVER_USER}@${SERVER_HOST} "chown -R www-data:www-data ${SERVER_PATH} && chmod -R 755 ${SERVER_PATH}"
-
-# Install/configure nginx if needed
-echo "🌐 Configuring nginx..."
-ssh ${SERVER_USER}@${SERVER_HOST} "
-# Install nginx if not present
-if ! command -v nginx &> /dev/null; then
-    apt update && apt install -y nginx
+# 检查是否在正确的目录
+if [ ! -f "package.json" ]; then
+    echo "❌ 错误: 请在 research-site 目录下运行此脚本"
+    exit 1
 fi
 
-# Create nginx configuration
-cat > /etc/nginx/sites-available/research-cli << 'EOF'
-server {
-    listen 80;
-    server_name _;
-    root ${SERVER_PATH};
-    index index.html;
+# 拉取最新代码
+echo "📥 拉取最新代码..."
+git pull origin main
 
-    location / {
-        try_files \$uri \$uri/ /index.html;
-    }
+# 安装依赖
+echo "📦 安装依赖..."
+npm install --legacy-peer-deps
 
-    location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg)$ {
-        expires 1y;
-        add_header Cache-Control \"public, immutable\";
-    }
+# 构建项目
+echo "🔨 构建项目..."
+npm run build
 
-    gzip on;
-    gzip_vary on;
-    gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
-}
-EOF
+# 停止现有进程
+echo "⏹️  停止现有服务..."
+pkill -f "next start" || true
+pkill -f "npm.*start" || true
 
-# Enable the site
-ln -sf /etc/nginx/sites-available/research-cli /etc/nginx/sites-enabled/
-rm -f /etc/nginx/sites-enabled/default
+# 启动服务
+echo "▶️  启动服务..."
+PORT=3001 npm start > /tmp/research-cli.log 2>&1 &
 
-# Test and reload nginx
-nginx -t && systemctl reload nginx
-systemctl enable nginx
-systemctl start nginx
-"
+# 等待服务启动
+echo "⏳ 等待服务启动..."
+sleep 5
 
-echo "✅ Deployment completed successfully!"
-echo "🌍 Website should be available at: http://${SERVER_HOST}" 
+# 检查服务状态
+if curl -f http://localhost:3001 > /dev/null 2>&1; then
+    echo "✅ 部署成功! 服务运行在 http://localhost:3001"
+    echo "📄 日志文件: /tmp/research-cli.log"
+else
+    echo "❌ 部署失败! 请检查日志: /tmp/research-cli.log"
+    exit 1
+fi
+
+echo "🎉 部署完成!" 

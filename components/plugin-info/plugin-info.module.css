@@ -144,3 +144,14 @@
     order: 3;
   }
 }
+
+.error {
+  color: #ff6b6b;
+  padding: 10px;
+  text-align: center;
+  font-style: italic;
+}
+
+.error p {
+  margin: 0;
+}

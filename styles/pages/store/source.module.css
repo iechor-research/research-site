@@ -1,5 +1,5 @@
 .name {
-  composes: name from './index.module.css'
+  composes: name from './index.module.css';
 }
 
 .container {

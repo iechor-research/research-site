@@ -29,7 +29,8 @@
   cursor: pointer;
 }
 
-.input:focus + .icon, .icon:hover {
+.input:focus + .icon,
+.icon:hover {
   opacity: 1;
 }
 

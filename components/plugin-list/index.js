@@ -6,31 +6,29 @@ export default ({ query, plugins, filteredBy }) =>
   filteredBy === 'featured' ? (
     <div className={styles.featuredWrapper}>
       {plugins.map((plugin) => (
-        (<Link
+        <Link
           key={plugin.name}
           href="/store/[name]"
           as={`/store/${plugin.name}`}
-          className={styles.featuredElemContent}>
-
+          className={styles.featuredElemContent}
+        >
           <Plugin {...plugin} query={query} featured={true} />
-
-        </Link>)
+        </Link>
       ))}
     </div>
   ) : (
     <div className={styles.listWrapper}>
       {plugins.map((plugin) => (
-        (<Link
+        <Link
           key={plugin.name}
           href="/store/[name]"
           as={`/store/${plugin.name}`}
-          className={styles.listElemContainer}>
-
+          className={styles.listElemContainer}
+        >
           <div className={styles.listElemContent}>
             <Plugin {...plugin} query={query} featured={false} />
           </div>
-
-        </Link>)
+        </Link>
       ))}
     </div>
   )

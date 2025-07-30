@@ -14,7 +14,8 @@
   --bright-green: #3afacf;
   --gray: #999;
   --font-sans: 'Inter', sans-serif;
-  --font-mono: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+  --font-mono:
+    Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 

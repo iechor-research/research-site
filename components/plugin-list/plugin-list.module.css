@@ -17,7 +17,7 @@
   border-top: 1px solid #333;
 }
 
-.listElemContainer:hover  {
+.listElemContainer:hover {
   color: inherit;
   background: #121212;
   border-color: transparent;

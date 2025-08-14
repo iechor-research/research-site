@@ -1047,15 +1047,53 @@ export default function ResearchPage() {
                 fontWeight: 'bold',
               }}
             >
-              Quick Installation:
+              🚀 一键安装 (推荐):
+            </h4>
+            <pre
+              style={{
+                backgroundColor: 'rgba(0,0,0,0.4)',
+                color: '#50e3c2',
+                padding: '20px',
+                borderRadius: '10px',
+                fontSize: '1.1rem',
+                fontWeight: 'bold',
+                textAlign: 'left',
+                overflow: 'auto',
+                marginBottom: '15px',
+              }}
+            >
+              <code>
+                curl -fsSL
+                https://raw.githubusercontent.com/iechor-research/research-cli/main/install.sh
+                | bash
+              </code>
+            </pre>
+            <p
+              style={{
+                fontSize: '0.9rem',
+                opacity: '0.8',
+                marginBottom: '20px',
+              }}
+            >
+              支持 Linux、macOS、Windows WSL/Git Bash
+            </p>
+
+            <h4
+              style={{
+                marginBottom: '1rem',
+                fontSize: '1.1rem',
+                fontWeight: 'bold',
+              }}
+            >
+              📦 NPM 安装:
             </h4>
             <pre
               style={{
                 backgroundColor: 'rgba(0,0,0,0.4)',
                 color: 'white',
-                padding: '20px',
+                padding: '15px',
                 borderRadius: '10px',
-                fontSize: '1.2rem',
+                fontSize: '1rem',
                 fontWeight: 'bold',
                 textAlign: 'left',
                 overflow: 'auto',
@@ -1064,7 +1102,7 @@ export default function ResearchPage() {
               <code>npm install -g @iechor/research-cli</code>
             </pre>
             <p style={{ marginTop: '1rem', fontSize: '1rem', opacity: '0.9' }}>
-              Then run{' '}
+              然后运行{' '}
               <code
                 style={{
                   backgroundColor: 'rgba(0,0,0,0.3)',
@@ -1074,7 +1112,7 @@ export default function ResearchPage() {
               >
                 research --help
               </code>{' '}
-              to get started
+              开始使用
             </p>
           </div>
         </div>

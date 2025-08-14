@@ -193,7 +193,39 @@ export default function HomePage({ latestRelease }) {
         </p>
 
         <h3 className="fade-in" style={{ color: '#00d4ff', marginTop: '30px' }}>
-          Install via NPM
+          🚀 一键安装 (推荐)
+        </h3>
+        <p
+          className="fade-in"
+          style={{ color: '#ccc', margin: '15px 0', fontSize: '1.1rem' }}
+        >
+          无需安装 Node.js，下载即用：
+        </p>
+        <pre
+          className="fade-in"
+          style={{
+            background: '#111',
+            padding: '15px',
+            borderRadius: '8px',
+            border: '1px solid #333',
+            marginBottom: '15px',
+          }}
+        >
+          <code style={{ color: '#50e3c2' }}>
+            curl -fsSL
+            https://raw.githubusercontent.com/iechor-research/research-cli/main/install.sh
+            | bash
+          </code>
+        </pre>
+        <p
+          className="fade-in"
+          style={{ color: '#888', fontSize: '0.9rem', marginBottom: '30px' }}
+        >
+          支持 Linux、macOS、Windows WSL/Git Bash
+        </p>
+
+        <h3 className="fade-in" style={{ color: '#00d4ff', marginTop: '30px' }}>
+          📦 NPM 安装
         </h3>
         <pre
           className="fade-in"

@@ -859,7 +859,7 @@ ${projectName}/
 • Font: Computer Modern
 • Page size: A4
 • Bibliography: BibTeX
-• Packages: amsmath, graphicx, hyperref
+• Packages: amsmath, graphicx, iechorref
 
 ⚙️ BUILD COMMANDS:
 • Compile: latex compile main.tex
